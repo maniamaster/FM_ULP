@@ -1,0 +1,200 @@
+
+
+*******************************************************************************
+Mon Dec  4 16:03:09 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f
+fitted parameters initialized with current variable values
+
+
+
+*******************************************************************************
+Mon Dec  4 16:06:40 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 7.0222034941e+00   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+  11 5.1475575895e-85   0.00e+00  7.07e-12    1.280033e-25  -1.997764e-27
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 5.14756e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
+
+
+*******************************************************************************
+Mon Dec  4 16:07:03 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 7.0222034941e+00   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+  11 5.1475575895e-85   0.00e+00  7.07e-12    1.280033e-25  -1.997764e-27
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 5.14756e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
+
+
+*******************************************************************************
+Mon Dec  4 16:07:12 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 7.0222034941e+00   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+  11 5.1475575895e-85   0.00e+00  7.07e-12    1.280033e-25  -1.997764e-27
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 5.14756e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
+
+
+*******************************************************************************
+Mon Dec  4 16:07:42 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.1475575895e-85   0.00e+00  1.42e-27    1.280033e-25  -1.997764e-27
+   1 5.1475575895e-85   0.00e+00  1.42e-27    1.280033e-25  -1.997764e-27
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 5.14756e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
+
+
+*******************************************************************************
+Mon Dec  4 16:08:12 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 5.1475575895e-85   0.00e+00  1.42e-27    1.280033e-25  -1.997764e-27
+   1 5.1475575895e-85   0.00e+00  1.42e-27    1.280033e-25  -1.997764e-27
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 5.14756e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
+
+
+*******************************************************************************
+Mon Dec  4 16:16:55 2017
+
+
+FIT:    data read from 'pc.txt'
+        format = z
+        #datapoints = 7
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x+b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 7.0226843909e+00   0.00e+00  7.07e-01    1.000000e+00   1.000000e+00
+  11 1.2868893974e-85   0.00e+00  7.07e-12    1.280033e-25  -1.997764e-27
+
+After 11 iterations the fit converged.
+final sum of squares of residuals : 1.28689e-85
+abs. change during last iteration : 0
+
+
+Hmmmm.... Sum of squared residuals is zero. Can't compute errors.
+
+Final set of parameters 
+======================= 
+
+a               = 1.28003e-25    
+b               = -1.99776e-27   
