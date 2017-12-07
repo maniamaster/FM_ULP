@@ -3,7 +3,7 @@ reset
 numbers ="1 3 4 5 6 7"
 temp(i)=system("ls */*ETemporal".i.".dat")
 
-set xrange [-200:200]
+set xrange [-80:80]
 set yrange [0:1]
 set y2range [-5:5]
 
