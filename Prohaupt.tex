@@ -75,7 +75,47 @@
 \label{sec:einleitung}
 \section{Theorie}
 \label{sec:theorie}
+\subsection{Grundlagen}
+Zur Beschreibung Ultrakurzer Laserpulse verwendet man einen semiklassischen
+Ansatz, bei dem die Maxwell-Gleichungen für eine makroskopische Polarisation
+gelöst wird. Im Folgenden wird das Vektorfeld des elektrischen Feldes $\vec E$
+durch einen Skalar $E$ genähert [Diels]. Hiermit wird eine für das Experiment
+relevante Polarisationsrichtung beachtet. Im Allgemeinen sind auch Effekte
+möglich, bei denen verschiedene Polarisationsrichtungen miteinander koppeln,
+was eine genauere Betrachtung erfordert.
+Ausgehend von dem elektrischen Feld $E(t)$ definiert man mithilfe der Fourier
+Transformation das komplexe Spektrum
+$\tilde{E}(\omega)=\mathcal{F}[E(t)]=\int_\mathbb{R}E(t)e^{-i\omega t}\d t
+\label{eq:FT}$.
+Die Rücktransformation ergibt sich zu $E(t)=\mathcal{F}^{-1}[\tilde
+E(\omega)]=\frac{1}{2\pi}\int_{\mathbb R}\tilde E(\omega)e^{i\omega t}\d
+\omega$. Dies funktioniert aufgrund der Linearität der Maxwell Gleichungen. Die
+Lösung kann somit in eine Superposition von ebenen Wellen zerlegt werden. Hier
+ist $\omega$ die Kreisfrequenz der ebenen Welle. Nach konvention wird häufig
+nur der positive Anteil des Spektrums betrachtet. Er hat aufgrund der
+Reellwertigkeit von $E$ den vollen Informationsgehalt
+[Diels]. Bei der Fourier-Rücktransformation integriert man so nur über alle
+positiven $\omega$ [Diels].
+Ein Puls wird nun beschrieben durch [Trebino lec]
+\begin{align}
+    E(t)=\frac{1}{2}\sqrt{I(t)}\exp\left(i\left[ \omega _0 t-\Phi(t)
+    \right]\right),
+    \label{eq:efield}
+\end{align}
+wobei $\omega_0$ die sog. Trägerfrequenz und $\phi(t)$ eine allgemeine Phase in
+Abhängigkeit von der Zeit $t$ ist. Die Trägerfrequenz ist der oszillatorische
+Anteil des Pulses innerhalb der Einhüllenden $\sqrt{I(t)}$ und wird häufig in
+eine komplexe Einhüllende $E_0$ integriert. Die Phase $\phi(t)$ beschreibt die
+Zeitliche Veränderung der Farbe des Pulses. $I(t)$=$|E(t)|^2$ ist die
+Intensität des Pulses. Ist $I$ eine stark gepeakte Funktion, so redet man von
+einem ``ultrakurzen Puls''. Analog kann man durch $S=|\tilde E(\omega)|^2$ die
+spektrale Intensität einführen. Somit gilt $\tilde
+E(\omega)=\sqrt{S(\omega)}\exp(-i\varphi(\omega))\label{eq:spectrum}$, wobei
+$\varphi(\omega)$ die spektrale Phase ist. Diese ist zentrale Größe bei der 
+Beschreibung von gechirpten Pulsen (siehe unten).
+
 \section{Durchführung}
+
 \label{sec:durchfuehrung}
 \section{Auswertung}
 \label{sec:auswertung}
