@@ -10,6 +10,15 @@
 %               ngerman,english, %% Dokumentspr. Englisch, Alternativspr. Deutsch
                fleqn,headsepline=false,footsepline=false
               ]{Vorlage/MFPREPORT}
+\makeatletter
+\DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\makeatother
 
 %% Pakete und Definitionen ausgelagert
 \input{Vorlage/packages}
@@ -45,6 +54,9 @@
 \newcommand{\Gl}{Gl.\ }
 \newcommand{\Abb}{Abb.\ }
 \newcommand{\Tab}{Tab.\ }
+
+\usepackage{cleveref}
+\usepackage{braket}
 
 
 \begin{document}
@@ -106,14 +118,70 @@ wobei $\omega_0$ die sog. Trägerfrequenz und $\phi(t)$ eine allgemeine Phase in
 Abhängigkeit von der Zeit $t$ ist. Die Trägerfrequenz ist der oszillatorische
 Anteil des Pulses innerhalb der Einhüllenden $\sqrt{I(t)}$ und wird häufig in
 eine komplexe Einhüllende $E_0$ integriert. Die Phase $\phi(t)$ beschreibt die
-Zeitliche Veränderung der Farbe des Pulses. $I(t)$=$|E(t)|^2$ ist die
+Zeitliche Veränderung der Farbe des Pulses. $I(t)=|E(t)|^2$ ist die
 Intensität des Pulses. Ist $I$ eine stark gepeakte Funktion, so redet man von
 einem ``ultrakurzen Puls''. Analog kann man durch $S=|\tilde E(\omega)|^2$ die
 spektrale Intensität einführen. Somit gilt $\tilde
 E(\omega)=\sqrt{S(\omega)}\exp(-i\varphi(\omega))\label{eq:spectrum}$, wobei
 $\varphi(\omega)$ die spektrale Phase ist. Diese ist zentrale Größe bei der 
 Beschreibung von gechirpten Pulsen (siehe unten).
+Die Beschreibung des Spektrums ist auch mithilfe der Wellelänge $\lambda$
+möglich. Die Umrechnung ergibt sich zu [Trebino lec]:
+\begin{align}
+    S_\lambda(\lambda)=S_\omega\left(\frac{2\pi c}{\lambda^2}\right)\frac{2\pi
+    c}{\lambda^2}.
+    \label{eq:lambdaspec}
+\end{align}
 
+
+\subsection{Instantane Frequenz und Chirp}
+Die instantane Frequenz eines ultrakurzen Pulses ist definiert als [trebino lec]
+\begin{align}
+    \omega_{\text{inst}}=\omega_0-\diff{\phi}{t},
+    \label{eq:instfrequ}
+\end{align}
+mit der Phase $\phi$ und der Trägerfrequenz $\omega_0$. Man kann nun sowohl die Phase, als auch die spektrale Phase taylorentwickeln: 
+\begin{align}
+    \phi(t)&=\phi_0+\underbrace{\diff{\phi}{t}|_{t=0}}_{\phi_1}t+\underbrace{\diff[2]{\phi}{t}|_{t=0}}_{\phi_2}\frac{t^2}{2}+\cdots,\\
+    \varphi(w)&=\varphi_0+\underbrace{\diff{\varphi}{\omega}|_{\omega=\omega_0}}_{\varphi_1}(\omega-\omega_0)+\underbrace{\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}}_{\varphi_2}\frac{(\omega-\omega_0)^2}{2}+\cdots.
+    \label{eq:taylor}
+\end{align}
+Hier ist $\varphi_1=\diff{\varphi}{\omega}|_{\omega=\omega_0}$ der sogenannte ``group delay''(GD) und $\varphi_2=\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}$ die ``group delay dispersion (GDD). Hieraus ist zu sehen: Eine nichtverschwindendes $\phi_1$ erzeugt nach \cref{eq:instfrequ} einen konstanten offset in der instantenen Frequenz. Dies resultiert nach dem Fourier shift theorem [CITE] zu einer Verschiebung im Spektrum. Andersherum erzeugt ein nicht verschwindender GD einen offset in der temporalen Intensität. Dies ist zur bestimmung von Pulslängen irrelevant. Ist jedoch $\varphi_2$ ungleich Null, so kommt es zur Dispersion: Die Gruppengeschwindigkeit ändert sich für verschiedene Frequenzen unterschiedlich und der Puls veräuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nichtverschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
+
+\subsection{Gaußpuls und Bandprodukt}
+Die am einfachst zu handhabene Pulsform ist die eines Gaußpulses: [DIELS]
+\begin{align}
+    E(t)=E_0\exp\left[-2\ln 2\left(\frac{t}{\tau_{\text{FWHM}}}\right)\right].
+    \label{eq:gaus}
+\end{align}
+$\tau_{\text{FWHM}}$ bezeichnet die ``full-width half maximum'', also die Halbwertsbreite des Pulses, welche eine von vielen Definitionen zur Beschreibung der Puls- oder Spektralbreite ist. Sie ist definiert als die Breite an der Halben Pulshöhe. Im Folgenden wird stets $\tau\equiv\tau_{\text{FWHM}}$ gesetzt. Der Gaußpuls ist neben seiner einfachen Handhabbarkeit auch eine der am häufigsten auftretenden Pulsformen.\\
+Da (Kreis-) Frequenz und Zeit konjugierte Variablen einer Fourier Transformation sind, gilt für sie die Unschärferelation, genannt ``Zeit-Bandbreiteprodukt'': [Diels]
+\begin{align}
+    \braket{\omega^{2}}\braket{t^{2}} \geq \frac{M^{4}}{4}\kappa_c,
+    \label{eq:time-bandwidth}
+\end{align}
+wobei $\braket{\Delta\omega^{2}}$ bzw $\braket{\Delta t^{2}}$ die Pulsbreite bzw die Bandbreite -berechnet durch das zweite Moment [Diels]- bezeichnet. $M$ ist ein Formfaktor, der die Abweichung zum idealen Gaußpuls bezeichnet [CITE]. $\kappa_c$ ist der Chirpfaktor, welcher angibt, dass bei gechirpten Pulsen das Zeit-Bandbreiteprodukt größer ist, als für ungechirpte Pulse. Einen ungechirpten Puls bezeichnet man demnach auch als ``Fourier-limitiert''. Fourier-limitierte Pulse sind also für eine konstante Bandbreite stets am kürzesten.
+Die Umrechnung von den zweiten Momenten zur Halbwertsbreite ist für Gaußpulse einfach über die Varianz einer Gaußverteilung zu berechnen. Es gilt $\tau^2=2\sqrt{2 \ln 2}\braket{t^2}$. Aus \cref{eq:time-bandwidth} mit $M=1$ und $\kappa_c=1$ lässt sich ebenfalls $\braket{\omega^2}=\frac{1}{4 \braket{t^2}}$ durch die Halbwertsbreite ausdrücken.
+
+\subsection{Dispersion im Medium}
+Bewegt sich ein Lichtpuls durch ein Medium, so wird eine Transferfunktion im Frequenzbild zum elektrischen Feld multipliziert [trebino lec]: $\tilde E_{\text{out}}(\omega)=\tilde{E}_{\text{in}}(\omega)\exp(-\alpha(\omega)L)\exp(-i n(\omega)k_0L)$. Hier beschreibt $\alpha$ die Absorption, welche in diesem Versuch ignoriert wird. $n(\omega)$ ist der Brechungsindex des Materials in Abhängigkeit von der Frequenz, $k_0$ ist die Wellenzahl bei der Trägerfrequenz und $L$ ist die Länge des Materials. Relevant für die Verbreiterung von Pulslängen ist die Modulation der spektralen Phase. Aufgrund der Form der Transferfunktion wird diese direkt hinzuaddiert [trebino]:
+\begin{align}
+    \varphi_{\text{out}}(\omega)=\varphi_{\text{in}}+n(\omega)k_0L.
+    \label{eq:transferphase}
+\end{align}
+Eine Taylornäherung des Wellenvektors $k(\omega)=n(\omega)k_0$ ergibt analog zu \cref{eq:taylor} die sog. ``group velocity dispersion'' (GVD): [TREBINO]
+\begin{align}
+    \text{GVD}=k''(\omega_0)=\frac{1}{2}\frac{\lambda_0^3}{2\pi c_0^2}\diff[2]{n}{\lambda},
+    \label{eq:gvd}
+\end{align}
+mit der Trägerwellenlänge $\lambda_0$ und der Lichtgeschwindigkeit $c_0$.
+Es gilt GDD $=$ GVD $ L$.
+Der wellenlängenabhängige Brechungsindex berechnet sich aus der Sellmeier Gleichung [CITE refr.]:
+\begin{align}
+    n^2(\lambda)=\frac{B_1 \lambda^2}{\lambda^2-C_1}+\frac{B_2 \lambda^2}{\lambda^2-C_2}+\frac{B_3 \lambda^2}{\lambda^2-C_3},
+    \label{eq:sellmeier}
+\end{align}
+mit materialspezifischen numerischen Konstanten $B_i, C_i$, die z.B. in \cite{refr} aufgelistet sind.
 \section{Durchführung}
 
 \label{sec:durchfuehrung}
@@ -162,6 +230,10 @@ Beschreibung von gechirpten Pulsen (siehe unten).
     \end{tabular}
 \end{table}
 \section{Diskussion}
+\cite{tidecks1990current}
+
+
+\bibliography{literatur}
 
 \end{document}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  13 DEC 2017 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  13 DEC 2017 17:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -132,6 +132,14 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 \c@@countconductedon=\count91
 )
+LaTeX Info: Redefining \rm on input line 14.
+LaTeX Info: Redefining \sf on input line 15.
+LaTeX Info: Redefining \tt on input line 16.
+LaTeX Info: Redefining \bf on input line 17.
+LaTeX Info: Redefining \it on input line 18.
+LaTeX Info: Redefining \sl on input line 19.
+LaTeX Info: Redefining \sc on input line 20.
+
 (./Vorlage/packages.tex
 (/usr/share/texlive/texmf-dist/tex/latex/ntgclass/a4.sty
 Package: a4 2004/04/15 v1.2g A4 based page layout
@@ -646,31 +654,48 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 \c@satz=\count140
 \c@defi=\count141
 )
-(./Vorlage/shortcuts.tex) (./Prohaupt.aux)
+(./Vorlage/shortcuts.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
+Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
+Package cleveref Info: `hyperref' support loaded on input line 2230.
+LaTeX Info: Redefining \cref on input line 2230.
+LaTeX Info: Redefining \Cref on input line 2230.
+LaTeX Info: Redefining \crefrange on input line 2230.
+LaTeX Info: Redefining \Crefrange on input line 2230.
+LaTeX Info: Redefining \cpageref on input line 2230.
+LaTeX Info: Redefining \Cpageref on input line 2230.
+LaTeX Info: Redefining \cpagerefrange on input line 2230.
+LaTeX Info: Redefining \Cpagerefrange on input line 2230.
+LaTeX Info: Redefining \labelcref on input line 2230.
+LaTeX Info: Redefining \labelcpageref on input line 2230.
+Package cleveref Info: `amsthm' support loaded on input line 2858.
+Package cleveref Info: `listings' support loaded on input line 2950.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/braket/braket.sty) (./Prohaupt.aux)
 \openout1 = `Prohaupt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 50.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -732,7 +757,7 @@ File: datenumbergerman.ldf
 \@den=\count150
 )
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 50.
+Package hyperref Info: Link coloring OFF on input line 62.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -742,9 +767,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count151
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (./Prohaupt.out) (./Prohaupt.out)
 \@outlinefile=\write4
@@ -770,92 +795,94 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 \c@lstlisting=\count158
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 64.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 64.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 65.
+(babel)             in language  on input line 76.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 77.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
+Package cleveref Info: loaded `ngerman' language definitions on input line 77.
+LaTeX Font Info:    Try loading font information for U+msa on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 65.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 65.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 77.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-Overfull \hbox (0.95184pt too wide) in paragraph at lines 65--65
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 77--77
 []
  []
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 65.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
 
-Overfull \hbox (0.95184pt too wide) in paragraph at lines 65--65
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 77--77
 []
  []
 
+Package cleveref Info: loaded `ngerman' language definitions on input line 77.
 
-Overfull \hbox (0.95184pt too wide) in paragraph at lines 65--65
+Overfull \hbox (0.95184pt too wide) in paragraph at lines 77--77
 []
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 65.
+(babel)             in language  on input line 77.
  [2
 
 ]
@@ -865,79 +892,80 @@ Class scrartcl Warning: incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 69.
+ne 81.
 
-(./Prohaupt.toc)
+(./Prohaupt.toc
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
+Package cleveref Info: loaded `ngerman' language definitions on input line 2.
+Package cleveref Info: loaded `ngerman' language definitions on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `Prohaupt.toc'.
 
-
-
-./Prohaupt.tex:71: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 \clearpage
-               
-? 
-
-./Prohaupt.tex:71: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 \clearpage
-               
-? 
-
-./Prohaupt.tex:71: Class scrartcl Error: undefined old font command `\rm'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 \clearpage
-               
-? 
+Package cleveref Info: loaded `ngerman' language definitions on input line 83.
+Package cleveref Info: loaded `ngerman' language definitions on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 83.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 71.
-[3]
+(babel)             in language  on input line 83.
+ [3]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 86.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 88.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 88.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 90.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 78.
- (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+(babel)             in language  on input line 90.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 151.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 151.
+Package cleveref Info: loaded `ngerman' language definitions on input line 156.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 156.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 156.
+ [1
+
+]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 166.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 185.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 185.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 188.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 188.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 123.
+               Default added (so using `tbp') on input line 191.
 
 (./temp1.tex
 \gptboxheight=\skip84
@@ -953,7 +981,7 @@ Package epstopdf Info: Source file: <temp1.eps>
  temp1.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
- <temp1-eps-converted-to.pdf, id=58, 361.35pt x 252.945pt>
+ <temp1-eps-converted-to.pdf, id=95, 361.35pt x 252.945pt>
 File: temp1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp1-eps-converted-to.pdf>
@@ -962,7 +990,7 @@ Package pdftex.def Info: temp1-eps-converted-to.pdf used on input line 143.
 )
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 129.
+               Default added (so using `tbp') on input line 197.
 
 (./spec1.tex
 Package epstopdf Info: Source file: <spec1.eps>
@@ -975,7 +1003,7 @@ Package epstopdf Info: Source file: <spec1.eps>
  spec1.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
- <spec1-eps-converted-to.pdf, id=59, 361.35pt x 252.945pt>
+ <spec1-eps-converted-to.pdf, id=96, 361.35pt x 252.945pt>
 File: spec1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec1-eps-converted-to.pdf>
@@ -984,7 +1012,7 @@ Package pdftex.def Info: spec1-eps-converted-to.pdf used on input line 142.
 )
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 135.
+               Default added (so using `tbp') on input line 203.
 
 (./temp2.tex
 Package epstopdf Info: Source file: <temp2.eps>
@@ -997,7 +1025,7 @@ Package epstopdf Info: Source file: <temp2.eps>
  temp2.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
- <temp2-eps-converted-to.pdf, id=60, 361.35pt x 252.945pt>
+ <temp2-eps-converted-to.pdf, id=97, 361.35pt x 252.945pt>
 File: temp2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp2-eps-converted-to.pdf>
@@ -1006,7 +1034,7 @@ Package pdftex.def Info: temp2-eps-converted-to.pdf used on input line 139.
 )
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 141.
+               Default added (so using `tbp') on input line 209.
 
 (./spec2.tex
 Package epstopdf Info: Source file: <spec2.eps>
@@ -1019,7 +1047,7 @@ Package epstopdf Info: Source file: <spec2.eps>
  spec2.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
- <spec2-eps-converted-to.pdf, id=61, 361.35pt x 252.945pt>
+ <spec2-eps-converted-to.pdf, id=98, 361.35pt x 252.945pt>
 File: spec2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec2-eps-converted-to.pdf>
@@ -1027,151 +1055,87 @@ Package pdftex.def Info: spec2-eps-converted-to.pdf used on input line 135.
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 215.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 164.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
+(babel)             in language  on input line 232.
+ (./Prohaupt.bbl
 
+Class scrartcl Warning: incompatible usage of \@ssect detected.
+(scrartcl)              You've used the KOMA-Script implementation of \@ssect
+(scrartcl)              from within a non compatible caller, that does not
+(scrartcl)              \scr@s@ct@@nn@m@ locally.
+(scrartcl)              This could result in several error messages on input li
+ne 1.
 
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
+Package cleveref Info: loaded `ngerman' language definitions on input line 15.
+Package cleveref Info: loaded `ngerman' language definitions on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
-[1
-
-]
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
+(babel)             in language  on input line 15.
+[2]
+Package cleveref Info: loaded `ngerman' language definitions on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
-[2 <./temp1-eps-converted-to.pdf> <./spec1-eps-converted-to.pdf>]
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
-
-./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
-
-See the scrartcl class documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.166 \end{document}
-                    
-? 
+(babel)             in language  on input line 15.
+ [3 <./temp1-eps-converted-to.pdf> <./spec1-eps-converted-to.pdf>]
+Package cleveref Info: loaded `ngerman' language definitions on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 166.
+(babel)             in language  on input line 15.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 166.
-[3 <./temp2-eps-converted-to.pdf> <./spec2-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+(babel)             in language  on input line 15.
+ [4 <./temp2-eps-converted-to.pdf> <./spec2-eps-converted-to.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
+Package cleveref Info: loaded `ngerman' language definitions on input line 238.
 
-(./Prohaupt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package cleveref Info: loaded `ngerman' language definitions on input line 238.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 238.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 238.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 238.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 238.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
+ (./Prohaupt.aux
+Package cleveref Info: loaded `ngerman' language definitions on input line 22.
+Package cleveref Info: loaded `ngerman' language definitions on input line 26.
+Package cleveref Info: loaded `ngerman' language definitions on input line 30.
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
 Package rerunfilecheck Info: File `Prohaupt.out' has not changed.
-(rerunfilecheck)             Checksum: B1CF86CCA0523E28198B1384DAE51E45;351.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+(rerunfilecheck)             Checksum: 6DA0D60E45338EA6A333A02D2CA45CD5;575.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
  ) 
 Here is how much of TeX's memory you used:
- 13130 strings out of 493812
- 196240 string characters out of 6159461
- 390362 words of memory out of 5000000
- 16284 multiletter control sequences out of 15000+600000
- 53637 words of font info for 88 fonts, out of 8000000 for 9000
+ 14665 strings out of 493812
+ 230395 string characters out of 6159461
+ 467998 words of memory out of 5000000
+ 17786 multiletter control sequences out of 15000+600000
+ 62779 words of font info for 93 fonts, out of 8000000 for 9000
  748 hyphenation exceptions out of 8191
- 49i,12n,53p,8823b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 49i,16n,53p,8836b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
@@ -1185,12 +1149,12 @@ cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 sr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy2-p
-s/wasy10.pfb>
-Output written on Prohaupt.pdf (6 pages, 167420 bytes).
+/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
+Output written on Prohaupt.pdf (8 pages, 196121 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 124 compressed objects within 2 object streams
- 20 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 101 words of extra memory for PDF output out of 10000 (max. 10000000)
 
