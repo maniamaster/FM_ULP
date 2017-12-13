@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  12 DEC 2017 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.9)  13 DEC 2017 13:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -953,7 +953,7 @@ Package epstopdf Info: Source file: <temp1.eps>
  temp1.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
- <temp1-eps-converted-to.pdf, id=53, 361.35pt x 252.945pt>
+ <temp1-eps-converted-to.pdf, id=58, 361.35pt x 252.945pt>
 File: temp1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp1-eps-converted-to.pdf>
@@ -975,7 +975,7 @@ Package epstopdf Info: Source file: <spec1.eps>
  spec1.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
- <spec1-eps-converted-to.pdf, id=54, 361.35pt x 252.945pt>
+ <spec1-eps-converted-to.pdf, id=59, 361.35pt x 252.945pt>
 File: spec1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec1-eps-converted-to.pdf>
@@ -997,7 +997,7 @@ Package epstopdf Info: Source file: <temp2.eps>
  temp2.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
- <temp2-eps-converted-to.pdf, id=55, 361.35pt x 252.945pt>
+ <temp2-eps-converted-to.pdf, id=60, 361.35pt x 252.945pt>
 File: temp2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp2-eps-converted-to.pdf>
@@ -1019,7 +1019,7 @@ Package epstopdf Info: Source file: <spec2.eps>
  spec2.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
- <spec2-eps-converted-to.pdf, id=56, 361.35pt x 252.945pt>
+ <spec2-eps-converted-to.pdf, id=61, 361.35pt x 252.945pt>
 File: spec2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec2-eps-converted-to.pdf>
@@ -1030,142 +1030,146 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 147.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 147.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 164.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\rm'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 [1
 
 ]
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\rm'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 [2 <./temp1-eps-converted-to.pdf> <./spec1-eps-converted-to.pdf>]
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\sl'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\sl'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 
-./Prohaupt.tex:149: Class scrartcl Error: undefined old font command `\rm'.
+./Prohaupt.tex:166: Class scrartcl Error: undefined old font command `\rm'.
 
 See the scrartcl class documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.149 \end{document}
+l.166 \end{document}
                     
 ? 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 149.
+(babel)             in language  on input line 166.
 [3 <./temp2-eps-converted-to.pdf> <./spec2-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
 
 (./Prohaupt.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
 Package rerunfilecheck Info: File `Prohaupt.out' has not changed.
-(rerunfilecheck)             Checksum: 5FC6BF56E543729193A32DA10D4E90F8;286.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
+(rerunfilecheck)             Checksum: B1CF86CCA0523E28198B1384DAE51E45;351.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
  ) 
 Here is how much of TeX's memory you used:
- 13127 strings out of 493812
- 196198 string characters out of 6159461
- 386359 words of memory out of 5000000
- 16282 multiletter control sequences out of 15000+600000
- 51993 words of font info for 87 fonts, out of 8000000 for 9000
+ 13130 strings out of 493812
+ 196240 string characters out of 6159461
+ 390362 words of memory out of 5000000
+ 16284 multiletter control sequences out of 15000+600000
+ 53637 words of font info for 88 fonts, out of 8000000 for 9000
  748 hyphenation exceptions out of 8191
  49i,12n,53p,8823b,509s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1183,10 +1187,10 @@ live/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/wasy2-p
 s/wasy10.pfb>
-Output written on Prohaupt.pdf (6 pages, 163677 bytes).
+Output written on Prohaupt.pdf (6 pages, 167420 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 119 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
