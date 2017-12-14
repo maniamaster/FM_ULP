@@ -149,6 +149,7 @@ mit der Phase $\phi$ und der Trägerfrequenz $\omega_0$. Man kann nun sowohl die
 Hier ist $\varphi_1=\diff{\varphi}{\omega}|_{\omega=\omega_0}$ der sogenannte ``group delay''(GD) und $\varphi_2=\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}$ die ``group delay dispersion (GDD). Hieraus ist zu sehen: Eine nichtverschwindendes $\phi_1$ erzeugt nach \cref{eq:instfrequ} einen konstanten offset in der instantenen Frequenz. Dies resultiert nach dem Fourier shift theorem [CITE] zu einer Verschiebung im Spektrum. Andersherum erzeugt ein nicht verschwindender GD einen offset in der temporalen Intensität. Dies ist zur bestimmung von Pulslängen irrelevant. Ist jedoch $\varphi_2$ ungleich Null, so kommt es zur Dispersion: Die Gruppengeschwindigkeit ändert sich für verschiedene Frequenzen unterschiedlich und der Puls veräuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nichtverschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
 
 \subsection{Gaußpuls und Bandprodukt}
+\label{seq:bandprod}
 Die am einfachst zu handhabene Pulsform ist die eines Gaußpulses: [DIELS]
 \begin{align}
     E(t)=E_0\exp\left[-2\ln 2\left(\frac{t}{\tau_{\text{FWHM}}}\right)\right].
@@ -181,8 +182,70 @@ Der wellenlängenabhängige Brechungsindex berechnet sich aus der Sellmeier Glei
     n^2(\lambda)=\frac{B_1 \lambda^2}{\lambda^2-C_1}+\frac{B_2 \lambda^2}{\lambda^2-C_2}+\frac{B_3 \lambda^2}{\lambda^2-C_3},
     \label{eq:sellmeier}
 \end{align}
-mit materialspezifischen numerischen Konstanten $B_i, C_i$, die z.B. in \cite{refr} aufgelistet sind.
+mit materialspezifischen numerischen Konstanten $B_i, C_i$, die z.B. in
+\cite{refr} aufgelistet sind.\\
+Für die Veränderung der Pulsbreite in Abhängigkeit der GDD gilt folgende
+Beziehung, die in dieser Version durch Wigner-Distributionen [DIELS]
+hergeleitet wird:
+\begin{align}
+    \braket{t^2}=\braket{t_0^2}+\left[ \diff[2]{\varphi}{\omega}|_{0}
+    \right]^2\braket{\omega^2},
+    \label{eq:pulsverbreiterung}
+\end{align}
+der Chirp, den der Puls erfährt berechnet sich also durch ``GDD $\times$
+Bandbreite''. Aus den Umrechnungsregeln in \cref{seq:bandprod} kann man somit
+den Effekt von einer group velocity dispersion auf einen Puls mit gegebener
+Bandbreite berechnen.
+\section{Experimentelle Methoden und Messgrößen}
+\subsection{Räumliche Verzerrungen}
+Im Vergleich zu ebenen Wellen (continuous waves, cw's) bestehen ultrakurze
+Pulse aus
+sehr vielen Frequenzen: Sie haben eine hohe Bandbreite. Dies folgt unmittelbar
+aus dem Fourierzusammenhang zwischen Bandbreite und Pulslänge, dem Bandprodukt
+aus
+\cref{eq:time-bandwidth}. Aufgrund dieser hohen Bandbreite sind ultrakurze
+Laserpulse sehr viel anfälliger gegenüber Verzerrungen in der Zeit (temporaler
+Chirp) und im Raum, da Dispersion stets durch einen veränderlichen
+Brechungsindex in Abhängigkeit der verschiedenen Wellenlängen auftritt.
+Zeitliche Verzerrungen sorgen für eine Pulsverbreiterung nach
+\cref{eq:time-bandwidth}. Ein analoger Effekt tritt auch räumlich ein: Es kommt zu
+einem räumlichen Chirp, wenn verschiedene Wellenlängen einen unterschiedlichen
+Weg durch das Medium nehmen, wie zum Beispiel in einem Prismenkompressor
+(s.u.). Anstatt zu verschiedenen Zeiten findet man hier die Farben des Pulses
+an verschiedenen Orten, der Puls wird räumlich aufgefächert. Dieser Effekt
+tritt durch Winkeldispersion, wie im Prismenkompressor, aber auch in einem
+schrägen Glas ein, was in \cref{abb:spatialchirp} aufgezeigt ist.
+
+\subsection{Prismenkrompressor}
+Mithilfe des Prismnenkompressors (PC) kann ein gechirpter Puls wieder zu einem
+(nahezu) fourierlimitierten Puls komprimiert werden. Der Aufbau des
+Prismnenkompressors ist in \cref{abb:pc} zu sehen. Der Puls durchquert zwei
+Prismen, die entgegengesetzt parallel zueinander aufgestellt sind. Dabei sind
+sie so positioniert, dass der Puls beim ersten Prisma gerade durch die Spitze
+durchquert. Nach Snell's Gesetz verlassen die unterschiedlichen Wellenlängen
+das erste Prisma in unterschiedlichen Winkeln. Dadurch durchqueren sie
+unterschiedlich lange Strecken im zweiten Prisma. Durch die spezielle
+Positionierung verlassen alle Wellenlängen das zweite Prisma wieder parallel,
+aber mit einem räumlichen Chirp. Um diesen auszugleichen wird der Strahl an
+einem spiegel zurückreflektiert und nimmt somit den gleichen Weg erneut durch
+den Prismenkompressor. Durch die unterschiedlichen Weglängen der verschiedenen
+Frequenzen kann bei richtiger Positionierung des zweiten Prismas die Group
+Delay Dispersion negativ werden, wodurch ein gechirpter Puls entchirpt werden kann. Für die GDD des Prismenkompressors gilt: [DIELS]
+\begin{align}
+    \diff[2]{\varphi}{\omega}|_{\omega_0}=2\frac{\lambda_0^2}{2\pi c_0^2}\left[
+    L_g\diff[2]{n}{\lambda}|_{\lambda_0}-(4L+\frac{L_g}{n(\lambda_0)^3})(\diff{n}{\lambda}|_{\lambda_0})^2
+    \right],
+    \label{eq:pc}
+\end{align}
+wobei $\lambda_0$ die Trägerwellenlänge, $L_g$ die Weglänge im Glas für die
+Trägerwellenlänge und $L$ der Abstand der Spitzen der beiden Primsen ist. Für
+symmetrisch positionierte Prismen in Brewsterwinkelkonfiguration gilt
+$L_g=2I\frac{1}{\sqrt{1+n(\lambda_0)^2}}$ mit dem Einschub (insertion) des
+zweiten Prismas $I$, welcher im Experiment mit der Millimeterschraube direkt
+eingestellt wird.
+
 \section{Durchführung}
+
 
 \label{sec:durchfuehrung}
 \section{Auswertung}
