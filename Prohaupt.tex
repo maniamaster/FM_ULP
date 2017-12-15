@@ -197,7 +197,7 @@ Bandbreite''. Aus den Umrechnungsregeln in \cref{seq:bandprod} kann man somit
 den Effekt von einer group velocity dispersion auf einen Puls mit gegebener
 Bandbreite berechnen.
 \section{Experimentelle Methoden und Messgrößen}
-\subsection{Räumliche Verzerrungen}
+\subsection{Spatial chirp}
 Im Vergleich zu ebenen Wellen (continuous waves, cw's) bestehen ultrakurze
 Pulse aus
 sehr vielen Frequenzen: Sie haben eine hohe Bandbreite. Dies folgt unmittelbar
@@ -214,12 +214,44 @@ Weg durch das Medium nehmen, wie zum Beispiel in einem Prismenkompressor
 (s.u.). Anstatt zu verschiedenen Zeiten findet man hier die Farben des Pulses
 an verschiedenen Orten, der Puls wird räumlich aufgefächert. Dieser Effekt
 tritt durch Winkeldispersion, wie im Prismenkompressor, aber auch in einem
-schrägen Glas ein, was in \cref{abb:spatialchirp} aufgezeigt ist.
+schrägen Glas ein, was in \cref{fig:spatialchirp} aufgezeigt ist.
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{spatialchirp.png}
+    \caption{Spatial chirp verursacht durch einen Prismenkompressor (links) und
+        ein schiefes Glas (rechts) \cite{tutspatialchirp}}
+    \label{fig:spatialchirp}
+\end{figure}
+\subsection{Pulse front tilt}
+Eine weitere räumliche Verzerrung ist der sog. Pulse front tilt. Er gibt an, um
+wie viel die Pulsfront eines Laserpulses gegenüber der optischen Achse geneigt
+ist. Er wird hervorgerufen durch Winkeldispersion oder auch durch das
+Durchqueren eines räumlich gechirpten Pulses durch ein lineares Medium
+(\cref{fig:pft}).
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.5\textwidth]{pft.jpeg}
+    \caption{Pulse front tilt verursacht durch Winkeldispersion (oben) und
+        räumlichen Chirp (unten) \cite{Akturk:04}.}
+    \label{fig:pft}
+\end{figure}
 
 \subsection{Prismenkrompressor}
-Mithilfe des Prismnenkompressors (PC) kann ein gechirpter Puls wieder zu einem
+\begin{figure}[]
+    \centering
+    \includegraphics[width=\textwidth]{pc.png}
+    \caption{Schematischer Aufbau eines Prismenkompressors. Ein ungechirper
+    Puls tritt ein und wird temporal gechirpt, da unterschiedliche Wellenlängen
+    andere Propagationspfade nehmen. Bei entgegengesetztem Durchgang wird
+    ersichtlich: Ein gechirpter Puls wird durch einen Prismenkompressor bei
+    richtiger Einstellung ungechirpt, ``komprimiert''. Die Insertion ist definiert als der
+    Abstand des Eintrittspunktes der zentralen Wellenlänge (hier grün) und der
+    Spitze des zweiten Prismas .\cite{wikipc}}
+    \label{fig:pc}
+\end{figure}
+Mithilfe des Prismenkompressors (PC) kann ein gechirpter Puls wieder zu einem
 (nahezu) fourierlimitierten Puls komprimiert werden. Der Aufbau des
-Prismnenkompressors ist in \cref{abb:pc} zu sehen. Der Puls durchquert zwei
+Prismenkompressors ist in \cref{fig:pc} zu sehen. Der Puls durchquert zwei
 Prismen, die entgegengesetzt parallel zueinander aufgestellt sind. Dabei sind
 sie so positioniert, dass der Puls beim ersten Prisma gerade durch die Spitze
 durchquert. Nach Snell's Gesetz verlassen die unterschiedlichen Wellenlängen
@@ -243,6 +275,43 @@ symmetrisch positionierte Prismen in Brewsterwinkelkonfiguration gilt
 $L_g=2I\frac{1}{\sqrt{1+n(\lambda_0)^2}}$ mit dem Einschub (insertion) des
 zweiten Prismas $I$, welcher im Experiment mit der Millimeterschraube direkt
 eingestellt wird.
+
+\subsection{Grenouille}
+Um einen zeitlichen Prozess zu messen, benötigt man einen zweiten kürzeren Prozess, um
+den ersten auflösen zu können. Da ultrakurze Pulse einige Femtosekunden lang
+sind, während die Elektronik auf der Nanosekundenskala agiert, ist es demnach
+für solche besonders schwer, die Pulslänge zu messen. 
+Es gibt verschiedene Methoden: Ein erste Ansatz ist es, mithilfe eines
+Michelson-Interferrometers die Autokorrelation $A(\tau)=\int E(t)E^*(t-\tau)\d
+t$ zu bestimmen. Aus der gemessenen Intensität lässt sich die grobe
+Pulsstruktur rekonstruieren. Autokorrelationsmethoden haben allerdings viele
+Probleme, wie die Unterschätzung der Pulslänge durch sog. kohärente Artefakte
+\cite{swampintro}. Zusätzlich ist es unmöglich, die Phase eines ultrakurze
+Pulses mithilfe dieser Methoden zu messen.
+
+GRENOUILLE (Grating-eliminated No-nonsense Observation Of Ultrafast Incident
+Laser Light E Fields) behebt alle Probleme von Autokorrelaionsmethoden und
+liefert zusätzliche Informationen über den Puls: Es basiert auf dem ``Frequency
+Resolved Optical Gating'' (FROG) [CITE FROG], bei dem die spektrale Intensität gegenüber
+der zeitlichen Verzögerung des Auftreffens auf den Detektor , der sogenannte
+Frog trace gemessen wird. Aus diesem wird mithilfe eines Algorithmus die
+Pulsdauer, die Bandbreite sowie die Phase und die spektrale Phase
+rekonstruiert. Bei GRENOUILLE wird ein vereinfachter Aufbau, bestehend aus
+einem Fresnelschen Biprisma und einem second-harmonic generation (SHG) Kristall
+verwendet. Der Aufbau und die ist in \cref{fig:gren} zu sehen. Der breite SHG
+Kristall fächert die unterschiedlichen Wellenlängen entlang einer Dimension
+auf, während das Fresnelsche Biprisma in der anderen Dimension den Puls teilt
+und mit unterschiedlicher Verzögerung mit sich selbst interferieren lässt.
+Dadurch entsteht der Frog trace, welcher den Puls überestimiert. Somit lassen
+sich alle relevanten Informationen eines ultrakurzen Pulses rekonstruieren
+[CITE]. Insbesondere liefert die spektrale Phase den Chirp des Pulses. Es ist
+jedoch darauf zu Achten, dass die Methode symmetrisch gegenüber der
+Zeitrichtung ist und deswegen der Vorzeichen des Chirps nicht bestimmt wird.
+Zusätzlich werden automatisch der pulse front tilt, sowie der räumliche Chirp
+gemessen. Sie spiegeln sich im Frog trace jeweils als Vershiebung auf der
+Verzögerungsachse und als Scherung des Traces wider.
+
+
 
 \section{Durchführung}
 
