@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2016)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Prohaupt.aux
 The style file: dinat.bst
@@ -17,45 +17,46 @@ Warning--to sort, need author or key in refr
 Warning--to sort, need author or key in tutspatialchirp
 Warning--to sort, need author or key in wikipc
 Warning--to sort, need author or key in swampintro
-You've used 6 entries,
+Warning--to sort, need author or key in fprakt
+You've used 7 entries,
             3552 wiz_defined-function locations,
-            825 strings with 6647 characters,
-and the built_in function-call counts, 2714 in all, are:
-= -- 314
+            829 strings with 6728 characters,
+and the built_in function-call counts, 2992 in all, are:
+= -- 346
 > -- 23
 < -- 36
-+ -- 51
++ -- 52
 - -- 15
-* -- 244
-:= -- 433
-add.period$ -- 6
-call.type$ -- 6
-change.case$ -- 27
-chr.to.int$ -- 6
-cite$ -- 18
-duplicate$ -- 92
-empty$ -- 253
+* -- 267
+:= -- 475
+add.period$ -- 7
+call.type$ -- 7
+change.case$ -- 31
+chr.to.int$ -- 7
+cite$ -- 22
+duplicate$ -- 105
+empty$ -- 286
 format.name$ -- 27
-if$ -- 573
+if$ -- 638
 int.to.chr$ -- 0
 int.to.str$ -- 1
 missing$ -- 6
-newline$ -- 42
+newline$ -- 47
 num.names$ -- 8
-pop$ -- 49
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 23
+purify$ -- 26
 quote$ -- 0
-skip$ -- 89
+skip$ -- 96
 stack$ -- 0
-substring$ -- 202
-swap$ -- 13
+substring$ -- 214
+swap$ -- 14
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 61
-warning$ -- 4
-while$ -- 25
+type$ -- 72
+warning$ -- 5
+while$ -- 27
 width$ -- 0
-write$ -- 61
+write$ -- 69
 (There was 1 error message)

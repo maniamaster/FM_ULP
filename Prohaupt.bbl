@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{7}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -6,6 +6,11 @@
 \makeatother
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax\def\url#1{\texttt{#1}}\fi
+
+\bibitem[fprakt()]{fprakt}
+\dinatlabel{fprakt } \emph{Praktikumshandbuch}.
+\newblock master-fp.physik.uni-goettingen.de. --
+\newblock Von Betreuerin erhalten
 
 \bibitem[wikipc()]{wikipc}
 \dinatlabel{wikipc } \emph{Prism compressor}.

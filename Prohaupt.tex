@@ -298,7 +298,7 @@ Frog trace gemessen wird. Aus diesem wird mithilfe eines Algorithmus die
 Pulsdauer, die Bandbreite sowie die Phase und die spektrale Phase
 rekonstruiert. Bei GRENOUILLE wird ein vereinfachter Aufbau, bestehend aus
 einem Fresnelschen Biprisma und einem second-harmonic generation (SHG) Kristall
-verwendet. Der Aufbau und die ist in \cref{fig:gren} zu sehen. Der breite SHG
+verwendet. Der Aufbau und die Funktionsweise ist in \cref{fig:gren} zu sehen. Der breite SHG
 Kristall fächert die unterschiedlichen Wellenlängen entlang einer Dimension
 auf, während das Fresnelsche Biprisma in der anderen Dimension den Puls teilt
 und mit unterschiedlicher Verzögerung mit sich selbst interferieren lässt.
@@ -308,15 +308,97 @@ sich alle relevanten Informationen eines ultrakurzen Pulses rekonstruieren
 jedoch darauf zu Achten, dass die Methode symmetrisch gegenüber der
 Zeitrichtung ist und deswegen der Vorzeichen des Chirps nicht bestimmt wird.
 Zusätzlich werden automatisch der pulse front tilt, sowie der räumliche Chirp
-gemessen. Sie spiegeln sich im Frog trace jeweils als Vershiebung auf der
+gemessen. Sie spiegeln sich im Frog trace jeweils als Verschiebung auf der
 Verzögerungsachse und als Scherung des Traces wider.
 
 
 
 \section{Durchführung}
-
-
 \label{sec:durchfuehrung}
+\subsection{Aufbau}
+Der Versuchsafbau ist in \cref{fig:aufbau} zu sehen. Die verwendete Laserquelle
+ist ein Spectra Physics Tsunami mit einer zentralen Wellenlänge von 800\;nm,
+einer durchschnittsleistung von 400\;mW, einer Pulsrate von 76\;MHz und einer
+Pulsdauer von 22\;fs bei einer Bandbreite von 58\;nm. Der Strahl durchquert
+zunächst einer $\lambda/2$ Platte und wird p-polarisiert. Anschließend
+durchquert er den Prismenkompressor. Der Abstand der Prismen von Spitze zu
+Spitze wurde gemessen und beträgt $43,2\pm0.3$\;cm. Der Prismeneinschub wird
+direkt über eine Millimeterschraube variiert. Dem Laser stehen nun
+drei mögliche Strahlengänge zur Verfügung, welche jeweils mit Klappspiegeln
+eingestellt werden können. Pfad 1 besteht aus metallischen Spiegeln und einer
+optischen Bank, auf die verschiedene Glasfenster aus BK7 oder MgF2, sowie ein
+Glasspat und ein Langpass Filter geschraubt werden können. Pfad 2 besteht aus
+dielektrischen Spiegeln. Auf Pfad 3 durchquert der Strahl ein Spiegelpaar mit
+jeweils 5 Reflektionen. Eshandelt sich hierbei um gechirpte Spiegel, was die
+spätere Auswertung zeigt. Alle drei Pfade enden in dem Messinstrument, einem
+Swamp Optics Grenouille (Modell 8-20-USB). Zur Justage der Strahlengänge stehen
+diverse Justagespiegel, Infrarot-Irisblenden und Infrarotkarten bereit.
+
+\begin{figure}[]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{aufbau1.eps}
+    \end{center}
+    \caption{Versuchsaufbau. Der Laser passiert zunächst eine $\lambda/2$
+    Platte, anschließend den Prismenkompressor und geht dann entlang einen von
+    drei möglichen Strahlengängen mit unterschiedlichen optischen Komponenten.
+    Nach einer zweiten $\lambda/2$ Platte endet der Strahl im Grenouille
+    Analysator \cite{fprakt}.}
+    \label{fig:aufbau}
+\end{figure}
+
+\subsection{Sicherheitshinweise}
+Da es sich bei dem verwendeten Laser um einen der Klasse 4 handelt, sind
+zunächst einige Sicherheitshinweise zu beachten: Es müssen stets geeignete
+Laserschutzbrillen getragen werden. Alle reflektierenden Objekte müssen vor dem
+versuch abgelegt werden. Es sollte auch trotz der Schutzbrillen niemals direkt
+in den Laserstrahl geschaut werden. Ebenso sollte vermieden werden, mit der
+Hand direkt in den Strahlengang zu fassen. Es ist besonders wichtig, dass stets
+der gesamte Strahlengang des Lasers bekannt ist, bevor dieser zur Propagation
+freigegeben wird. Deswegen müssen bei der Justage stets zwei Infrarotkarten und
+gegebenfalls weitere Beamdumps benutz werden, um den Strahlengang nach und nach
+durch die hinzugefügten optischen Elemente zu leiten. Niemals darf ein
+optisches Element ohne Blockieren des Lasers in den Strahlengang gestellt
+werden, da unerwartete Reflexe auftreten können.\\
+\subsection{Durchführung}
+Zunächst wird der Prismenkompressor ohne zusätzliche optische Elemente
+vermessen und somit auch seine optimale Position bestimmt. Dazu wird der Laser mithilfe der Irisblenden und den Justagespiegeln
+auf Strahlengang 1 justiert. Bei dieser und jeder anderen Messung muss der
+Laser zunächst mithilfe des space-Modus der Analysesoftware der Strahl in den
+Grenouille zentriert werden. Dies geschieht wieder mit Justagespiegeln und zwei
+Irisblenden. Wichtig ist, dass der erste Spiegel den Strahl auf die erste
+Irisblende ausrichtet, während der zweite Spiegel für die zweite Blende
+verwendet wird (``beam walking''). Anschließend kann die Software auf den
+time-mode gestellt werden um die Echtzeitdaten des Lasers zu sehen. Hierbei ist
+auf ausreichende, aber nicht zu große Intensität des auftreffenden Strahles zu
+achten, welche über die zweite $\lambda/2$ Platte unmittelbar vorm Analysator
+eingestellt werden kann.//
+Um die optimale Kompressorposition zu bestimmen, wird der Einschub über die
+Millimeterschraube solange variiert, bis die gemessene Pulslänge (temporal
+FWHM) minimal ist. Da der Laser bereits mit etwas Chirp aus der Quelle kommt,
+wird somit garantiert, dass der komprimierte Puls die kürzeste Dauer und somit
+(näherungsweise) gaußförmig und ungechirpt ist (siehe Auswertung). Dies ist der
+Ausgangspunkt von allen anderen Messungen. Die Daten
+werden gespeichert und die Prismenkonfiguration notiert. Anschließend werden
+weitere Daten für unterschiedliche Prismenpositionen ermittelt.\\
+Nun werden Daten mit
+verschiedenen optischen Elementen, wie unterschiedlich dicken Gläsern aus BK7 und
+MgF2, sowie einem Glasspat und einem Langpassfilter auf der optischen Bank
+aufgenommen. Bei jedem optischen Element muss der Strahhl erneut in den
+Grenouille zentriert werden. Bei jeder Messung wird zunächst die Messung bei
+optimaler Kompressorposition durchgeführt. Anschließend wird versucht, die
+Pulsverbreiterungen mit dem Kompressor zu kompensieren, indem wieder die
+Pulslänge minimiert wird. Die Prismenpositionen werden erneut aufgeschrieben.
+Anschließend wird der Laser auf Strahlengang 2 justiert und es werden bei
+optiomaler Prismeneinstellung Daten für die dielektrischen Spiegel gespeichert
+und erneut wird versucht die Verzerrungen zu kompensieren.
+Als nächstes wird der Strahlengang 3 justiert und der Effekt der Spiegelpaare
+wird bei optimaler Prismenposition aufgenommen und versucht zu kompensieren.
+Nun wird die Bandbreite des Lasers verändert und die Messungen des
+Prismenkompressors und der der Glasfenster werden weiderholt.
+Es wurde versäumt, für die zweite Bandbreite eine neue optimale Prismenposition
+zu bestimmen.
+
+
 \section{Auswertung}
 \label{sec:auswertung}
 
