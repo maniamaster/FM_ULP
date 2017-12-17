@@ -402,6 +402,49 @@ zu bestimmen.
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Prismenkompressor}
+Zunächst wird die Vermessung des Prismenkompressors analysiert. Dafür werden
+für unterschiedlichen Einschub des zweiten Prismas gemessenen zeitlichen
+Pulsintensitäten sowie das Spektrum verglichen. Um die Insertion $I$ des
+Prismas zu bestimmen, wurde der Wert der Millimeterschraube bei der optimalen
+Einstellung mit minimaler Pulsdauer (``opt'') von jenem abgezogen, bei welchem
+die Bandbreite aufgrund des Abschneidens des Lasers durch Verfehlen des zweiten
+Prismas geringer wurde. Dies ist jedoch eine grobe Abschätzung, da der genaue
+Zeitpunkt des Verfehlens aufgrund des endlichen Laserdurchemssers willkürlich
+war. Die Idee ist, dass das Abschneiden einer Insertion von $0\;mm$ bedeutet. Die gemessene zeitliche Pulsintensität der ersten Laserausgangsbandbreite ist in
+\cref{fig:temp1} in Abhängigkeit von der Insertion $I$ aufgetragen. Ebenso
+eingetragen sind die gemessen Phasen $\Phi$. Es ist zu beachten, dass es sich
+hier um den Absolutbetrag der Phase handelt, da das Vorzeichen aufgrund der
+Zeitumkehrungsymmetrie von Grenouille keine Bedeutung hat. Um den linearen Chirp, also den Term zweiter Ordnung in \cref{eq:taylor} zu bestimmen, wird um das
+Phasenmaximum bei optimale Prismeneinstellung eine Funktion mit Ansatz
+$\frac{1}{2}ax^2+bx$ gefittet. Der Term $a$ ist nach \cref{eq:taylor} die
+zweite Ableitung der Phase nach der Zeit und gibt somit den zeitlichen Chirp
+an. Der Term $b$ gibt an, um wie viel sich das Spektrum verschiebt.
+In \cref{fig:spec1} ist das vermessene Spektrum, sowie die spektralen Phasen
+der ersten laserbandbreite für verschiedene $I$ aufgetragen. Wie bei den
+zeitlichen Intensitäten wird auch hier die Phase für die optimale Einstellung
+mit einem quadratischen Polynom gefittet. Der quadratische Term ist der lineare Chirp,
+welcher für eine Pulsverbreiterung im Zeitraum verantwortlich ist.
+Gleiches wird ebenfalls für die zweite Ausgangsbandbreite von
+$\braket{\omega^2}=???$ berechnet. Die Intensität und das Spektrum mit Phasen
+ist jeweils in \cref{fig:temp2} und \cref{fig:spec2} aufgetragen. Es wurde
+versäumt, für diese zweite Bandbreite eine neue optimale
+Prismenkompressorposition zu bestimmten, demnach ist mit ``opt'' hier weiterhin
+die optimale Position der ersten Bandbreite bezeichnet.
+Die Ergebnisse der Regressionen sind in Tabelle \cref{tab:fits}
+zusammengefasst.
+
+
+\begin{table}
+    \centering
+    \begin{tabular}[]{|c|c|c||c|c|c|}
+        \hline
+        $a$&$b$&$\chi^2$&$a$&$b$&$\chi^2$\\\hline
+        $0.001507\pm0.000014$&$-0.00179334\pm0.00005393$&$2e-6$&$0.000727188\pm0.0000212$&$793.888\pm0.6003$&$0.003$\\\hline
+    $0.000554621\pm0.00000338$&$1.612\pm0.034$&$2e-6$&$0.00181508\pm0.00004597$&$797.811\pm0.1107$&$1e-4$\\\hline
+    \end{tabular}
+    \label{}
+\end{table}
+
 
 
 \begin{figure}[]
@@ -430,8 +473,6 @@ zu bestimmen.
 \end{figure}
 \subsection{Glasfenster}
 \subsection{Spatial Chirp}
-\subsection{Pulse front tilt}
-\subsection{Longpass Filter}
 \begin{table}
     \centering
     \begin{tabular}[]{|c||c|c||c|c|}
@@ -448,6 +489,8 @@ zu bestimmen.
         longpass&$-90$&$-44$&$-7.06$&$-8.08$\\\hline
     \end{tabular}
 \end{table}
+\subsection{Pulse front tilt}
+\subsection{Longpass Filter}
 \section{Diskussion}
 \cite{tidecks1990current}
 
