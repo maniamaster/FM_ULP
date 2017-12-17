@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.27)  16 DEC 2017 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.27)  17 DEC 2017 14:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,6 +1082,10 @@ Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 400.
 [5]
 Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 402.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 402.
+Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 404.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 404.
@@ -1182,39 +1186,53 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 431.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 432.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 448.
+(babel)             in language  on input line 432.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 433.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 433.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 434.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 434.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 451.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 451.
  (./Prohaupt.bbl
-Package cleveref Info: loaded `ngerman' language definitions on input line 15.
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
  [6 <./aufbau1-eps-converted-to.pdf>]
-Package cleveref Info: loaded `ngerman' language definitions on input line 15.
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
  [7 <./temp1-eps-converted-to.pdf> <./spec1-eps-converted-to.pdf>]
-Package cleveref Info: loaded `ngerman' language definitions on input line 15.
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
+Package cleveref Info: loaded `ngerman' language definitions on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 1.
 
 [8 <./temp2-eps-converted-to.pdf> <./spec2-eps-converted-to.pdf>]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 42.
@@ -1222,42 +1240,43 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 42.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
-Package cleveref Info: loaded `ngerman' language definitions on input line 454.
-
-Package cleveref Info: loaded `ngerman' language definitions on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
+Package cleveref Info: loaded `ngerman' language definitions on input line 457.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 457.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 457.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 457.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 457.
  [9]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
  (./Prohaupt.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 21.
 Package cleveref Info: loaded `ngerman' language definitions on input line 25.
 Package cleveref Info: loaded `ngerman' language definitions on input line 29.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
-Package rerunfilecheck Info: File `Prohaupt.out' has not changed.
-(rerunfilecheck)             Checksum: EADDD6AF72D3465684D356619559B30C;1102.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
+
+Package rerunfilecheck Warning: File `Prohaupt.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Prohaupt.out':
+(rerunfilecheck)             Before: EADDD6AF72D3465684D356619559B30C;1102
+(rerunfilecheck)             After:  5C360A576634DF3B9D9D9CDAE24E9D9C;1358.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 454.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
  ) 
 Here is how much of TeX's memory you used:
- 14103 strings out of 493304
- 215300 string characters out of 6139871
- 397148 words of memory out of 5000000
+ 14107 strings out of 493304
+ 215356 string characters out of 6139871
+ 398148 words of memory out of 5000000
  17195 multiletter control sequences out of 15000+600000
  66203 words of font info for 97 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1279,10 +1298,10 @@ e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on Prohaupt.pdf (12 pages, 499460 bytes).
+Output written on Prohaupt.pdf (12 pages, 499673 bytes).
 PDF statistics:
- 311 PDF objects out of 1000 (max. 8388607)
- 261 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 316 PDF objects out of 1000 (max. 8388607)
+ 266 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
  185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
