@@ -146,7 +146,17 @@ mit der Phase $\phi$ und der Trägerfrequenz $\omega_0$. Man kann nun sowohl die
     \varphi(w)&=\varphi_0+\underbrace{\diff{\varphi}{\omega}|_{\omega=\omega_0}}_{\varphi_1}(\omega-\omega_0)+\underbrace{\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}}_{\varphi_2}\frac{(\omega-\omega_0)^2}{2}+\cdots.
     \label{eq:taylor}
 \end{align}
-Hier ist $\varphi_1=\diff{\varphi}{\omega}|_{\omega=\omega_0}$ der sogenannte ``group delay''(GD) und $\varphi_2=\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}$ die ``group delay dispersion (GDD). Hieraus ist zu sehen: Eine nichtverschwindendes $\phi_1$ erzeugt nach \cref{eq:instfrequ} einen konstanten offset in der instantenen Frequenz. Dies resultiert nach dem Fourier shift theorem [CITE] zu einer Verschiebung im Spektrum. Andersherum erzeugt ein nicht verschwindender GD einen offset in der temporalen Intensität. Dies ist zur bestimmung von Pulslängen irrelevant. Ist jedoch $\varphi_2$ ungleich Null, so kommt es zur Dispersion: Die Gruppengeschwindigkeit ändert sich für verschiedene Frequenzen unterschiedlich und der Puls veräuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nichtverschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
+Hier ist $\varphi_1=\diff{\varphi}{\omega}|_{\omega=\omega_0}$ der sogenannte
+``group delay''(GD) und
+$\varphi_2=\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}$ die ``group delay
+dispersion (GDD). Hieraus ist zu sehen: Eine nichtverschwindendes $\phi_1$
+erzeugt nach \cref{eq:instfrequ} einen konstanten offset in der instantenen
+Frequenz. Dies resultiert nach dem Fourier shift theorem [CITE] zu einer
+Verschiebung im Spektrum. Andersherum erzeugt ein nicht verschwindender GD
+einen offset in der temporalen Intensität. Dies ist zur bestimmung von
+Pulslängen irrelevant. Ist jedoch $\varphi_2$ ungleich Null, so kommt es zur
+Dispersion: Die Gruppengeschwindigkeit ändert sich für verschiedene Frequenzen
+unterschiedlich und der Puls verläuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nichtverschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
 
 \subsection{Gaußpuls und Bandprodukt}
 \label{seq:bandprod}
@@ -162,7 +172,17 @@ Da (Kreis-) Frequenz und Zeit konjugierte Variablen einer Fourier Transformation
     \label{eq:time-bandwidth}
 \end{align}
 wobei $\braket{\Delta\omega^{2}}$ bzw $\braket{\Delta t^{2}}$ die Pulsbreite bzw die Bandbreite -berechnet durch das zweite Moment [Diels]- bezeichnet. $M$ ist ein Formfaktor, der die Abweichung zum idealen Gaußpuls bezeichnet [CITE]. $\kappa_c$ ist der Chirpfaktor, welcher angibt, dass bei gechirpten Pulsen das Zeit-Bandbreiteprodukt größer ist, als für ungechirpte Pulse. Einen ungechirpten Puls bezeichnet man demnach auch als ``Fourier-limitiert''. Fourier-limitierte Pulse sind also für eine konstante Bandbreite stets am kürzesten.
-Die Umrechnung von den zweiten Momenten zur Halbwertsbreite ist für Gaußpulse einfach über die Varianz einer Gaußverteilung zu berechnen. Es gilt $\tau^2=2\sqrt{2 \ln 2}\braket{t^2}$. Aus \cref{eq:time-bandwidth} mit $M=1$ und $\kappa_c=1$ lässt sich ebenfalls $\braket{\omega^2}=\frac{1}{4 \braket{t^2}}$ durch die Halbwertsbreite ausdrücken.
+Die Umrechnung von den zweiten Momenten zur Halbwertsbreite ist für Gaußpulse
+einfach über die Varianz einer Gaußverteilung zu berechnen. Es gilt
+$\tau=2\sqrt{2 \ln 2}\braket{t^2}$. Aus \cref{eq:time-bandwidth} mit $M=1$ und
+$\kappa_c=1$ lässt sich ebenfalls $\braket{\omega^2}=\frac{1}{4 \braket{t^2}}$
+durch die Halbwertsbreite ausdrücken. Ausgedrückt durch die reguläre Frequenz
+$\nu$
+erhält man
+\begin{align}
+    \label{eq:bandprodeasy}
+    \Delta \nu \Delta t = 0.441.
+\end{align}
 
 \subsection{Dispersion im Medium}
 Bewegt sich ein Lichtpuls durch ein Medium, so wird eine Transferfunktion im Frequenzbild zum elektrischen Feld multipliziert [trebino lec]: $\tilde E_{\text{out}}(\omega)=\tilde{E}_{\text{in}}(\omega)\exp(-\alpha(\omega)L)\exp(-i n(\omega)k_0L)$. Hier beschreibt $\alpha$ die Absorption, welche in diesem Versuch ignoriert wird. $n(\omega)$ ist der Brechungsindex des Materials in Abhängigkeit von der Frequenz, $k_0$ ist die Wellenzahl bei der Trägerfrequenz und $L$ ist die Länge des Materials. Relevant für die Verbreiterung von Pulslängen ist die Modulation der spektralen Phase. Aufgrund der Form der Transferfunktion wird diese direkt hinzuaddiert [trebino]:
@@ -371,7 +391,7 @@ verwendet wird (``beam walking''). Anschließend kann die Software auf den
 time-mode gestellt werden um die Echtzeitdaten des Lasers zu sehen. Hierbei ist
 auf ausreichende, aber nicht zu große Intensität des auftreffenden Strahles zu
 achten, welche über die zweite $\lambda/2$ Platte unmittelbar vorm Analysator
-eingestellt werden kann.//
+eingestellt werden kann.\\
 Um die optimale Kompressorposition zu bestimmen, wird der Einschub über die
 Millimeterschraube solange variiert, bis die gemessene Pulslänge (temporal
 FWHM) minimal ist. Da der Laser bereits mit etwas Chirp aus der Quelle kommt,
@@ -439,10 +459,12 @@ zusammengefasst.
     \begin{tabular}[]{|c|c|c||c|c|c|}
         \hline
         $a$&$b$&$\chi^2$&$a$&$b$&$\chi^2$\\\hline
-        $0.001507\pm0.000014$&$-0.00179334\pm0.00005393$&$2e-6$&$0.000727188\pm0.0000212$&$793.888\pm0.6003$&$0.003$\\\hline
-    $0.000554621\pm0.00000338$&$1.612\pm0.034$&$2e-6$&$0.00181508\pm0.00004597$&$797.811\pm0.1107$&$1e-4$\\\hline
+        $0.001507\pm0.000014$&$-0.001793\pm0.000054$&$2e-6$&$0.000727\pm0.000021$&$793.88\pm0.60$&$0.003$\\\hline
+    $0.000555\pm0.000003$&$1.612\pm0.034$&$2e-6$&$0.001815\pm0.000046$&$797.81\pm0.11$&$1e-4$\\\hline
     \end{tabular}
-    \label{}
+    \caption{Ergebnisse der quadratischen Fits für die Phase und die
+    spektrale Phase der optimalen Prismenkonfiguration.}
+    \label{tab:fits}
 \end{table}
 
 
@@ -472,7 +494,26 @@ zusammengefasst.
     \label{fig:spec2}
 \end{figure}
 \subsection{Glasfenster}
-\subsection{Spatial Chirp}
+\subsection{Spatial Chirp und Pulse Front Tilt}
+Der räumliche Chirp, welcher von der Quick-Frog Software gemessen wurde, ist
+zusammen mit dem Puls Front tilt in \cref{tab:pft} aufgetragen. Für die Messung
+ohne optische Elemente wurden ebenfalls beide Werte zum Vergleich eingetragen. 
+Da von jedem Element höchstens zwei Datenpunkte vorhanden sind, wurde auf einen
+Plot verzichtet. Man sieht, dass auch ohne optisches Element sowohl der PFT als
+auch der räumliche Chirp nicht null sind. Deswegen ist in \cref{fig:pcpft}
+beides für verschiedene Prismeneinschübe, aber ohne optisches Element
+aufgetragen. Fehler wurden von der Analysesoftware nicht berechnet, aber man
+kann die Schwankungen der Messwerte größer als den Messfehler des Instrumentes
+annehmen.
+\begin{figure}[]
+    \begin{center}
+        \input{pcpft.tex}
+    \end{center}
+    \caption{Puls Front Tilt und Spatial Chirp der Prismenkompressorausmessung
+    in Abhängigkeit der Insertion.}
+    \label{fig:pcpft}
+\end{figure}
+
 \begin{table}
     \centering
     \begin{tabular}[]{|c||c|c||c|c|}
@@ -480,6 +521,7 @@ zusammengefasst.
         Objekt&\multicolumn{2}{|c||}{Spatial Chirp [$10^{-5}\Delta\lambda/\Delta x$]}&\multicolumn{2}{|c|}{Pulse front tilt [$\text{fs}/\text{mm}$]}\\\hline
          &unkompensiert&kompensiert&unkompensiert&kompensiert\\ 
         \hline
+        Nur PC&$-7$&-&$-8.38$&-\\\hline
         5 mm BK7&$-30$&$-5$&$-8.52$&$-8.80$\\\hline
         10 mm BK7&$-59$&$2760$&$-8.6$&$-9.80$\\\hline
         5 mm MgF2&$-20$&$-5$&$-8.59$&$-9.01$\\\hline
@@ -488,9 +530,33 @@ zusammengefasst.
         BK7 Keil (wedge)&$-11$&$11$&$-15.87$&$-15.1$\\\hline
         longpass&$-90$&$-44$&$-7.06$&$-8.08$\\\hline
     \end{tabular}
+    \caption{Von Quick Frog gemessener räumlicher Chirp und Puls Front Tilt,
+    jeweils in optimaler (unkompensierter) Prismenkonfiguration und mit
+    Kompensierung für verschiedene optische Elemente.}
+    \label{tab:pft}
 \end{table}
 \subsection{Pulse front tilt}
 \subsection{Longpass Filter}
+
+\begin{figure}[]
+    \begin{center}
+        \input{longpass.tex}
+    \end{center}
+    \caption{Intensität bei optimaler Prismenkonfiguration (opt) ohne
+    Langpassfilter und bei
+    eingesetztem Langpassfilter unkompensiert und kompensiert.}
+    \label{fig:long1}
+\end{figure}
+
+\begin{figure}[]
+    \begin{center}
+        \input{longpass2.tex}
+    \end{center}
+    \caption{Spektrum bei optimaler Prismenkonfiguration (opt) ohne
+    Langpassfilter und mit eingesetztem Langpassfilter, unkompensiert und
+    kompensiert.}
+    \label{fig:long2}
+\end{figure}<++>
 \section{Diskussion}
 \cite{tidecks1990current}
 
