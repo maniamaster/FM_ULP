@@ -20,6 +20,7 @@
 \contentsline {subsection}{\numberline {5.1}Prismenkompressor}{6}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Glasfenster}{7}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Spatial Chirp und Pulse Front Tilt}{7}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Pulse front tilt}{9}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Longpass Filter}{9}{subsection.5.5}
-\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
+\contentsline {subsection}{\numberline {5.4}Langpassfilter}{9}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Dielektrische Spiegel}{9}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Rechteckiges Spiegelpaar}{12}{subsection.5.6}
+\contentsline {section}{\numberline {6}Diskussion}{12}{section.6}

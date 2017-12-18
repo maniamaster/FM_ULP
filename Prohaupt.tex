@@ -502,7 +502,8 @@ Da von jedem Element höchstens zwei Datenpunkte vorhanden sind, wurde auf einen
 Plot verzichtet. Man sieht, dass auch ohne optisches Element sowohl der PFT als
 auch der räumliche Chirp nicht null sind. Deswegen ist in \cref{fig:pcpft}
 beides für verschiedene Prismeneinschübe, aber ohne optisches Element
-aufgetragen. Fehler wurden von der Analysesoftware nicht berechnet, aber man
+aufgetragen. Man erkennt, dass der räumliche Chirp mit steigendem
+Prismeneinschub geringer wird, während der PFT wächst. Fehler wurden von der Analysesoftware nicht berechnet, aber man
 kann die Schwankungen der Messwerte größer als den Messfehler des Instrumentes
 annehmen.
 \begin{figure}[]
@@ -535,8 +536,35 @@ annehmen.
     Kompensierung für verschiedene optische Elemente.}
     \label{tab:pft}
 \end{table}
-\subsection{Pulse front tilt}
-\subsection{Longpass Filter}
+\subsection{Langpassfilter}
+Für den Langpassfilter sind Intensität und Spektrum jeweils in
+\cref{fig:long1,fig:long2} zusammen mit den zugehörigen Phasen sowohl in
+optimaler als auch in komprensierter PC-Konfiguration aufgetragen.
+Ebenfalls aufgetragen ist Intensität und Spektrum inklusive Phase der Messung
+ohne Langpassfilter bei optimaler Prismenkonfiguration. Die zugehörigen
+Pulsdauern und Bandbreiten sind in Tabelle \cref{tab:long} zusammengefasst.
+Zum Vergleich ist für die gemessene Bandbreite der Langpass-Messung mithilfe
+vom Zeit-Bandprodukt \cref{eq:bandprodeasy} die resultierende Pulsdauer eines
+fourierlimitierten Pulses berechnet worden.
+
+
+\begin{table}
+    \centering
+    \begin{tabular}[]{|c||c|c|c|c|}
+        \hline
+        Messung&$\tau$ [fs]&$\Delta\lambda$ [nm]&$\lambda_0$ [nm]&FWHM Zeit-Bandprodukt\\\hline
+        Ohne LP (opt)&24.6&45.3&793.9&0.533\\\hline
+        Langpass (opt)&56.4&34.9&784.3&0.958\\\hline
+        Langpass (komp)&37.4&38.6&784.3&0.702\\\hline\hline
+        Theorie &25.9&34.9&784.3&0.441\\\hline
+
+    \end{tabular}
+    \caption{Pulsdauern, Bandbreiten, Trägerwellenlängen, sowie das
+    Zeit-Bandprodukt der Messungen ohne und mit Langpassfilter. Für die opt.
+Langpass-Messung wurde die fourierlimitierte Pulsdauer berechnet. }
+    \label{tab:long}
+\end{table}
+
 
 \begin{figure}[]
     \begin{center}
@@ -556,7 +584,75 @@ annehmen.
     Langpassfilter und mit eingesetztem Langpassfilter, unkompensiert und
     kompensiert.}
     \label{fig:long2}
-\end{figure}<++>
+\end{figure}
+
+\subsection{Dielektrische Spiegel}
+Die Messung für Pfad 2 mit den drei dielektrischen Spiegeln ergab ein sehr
+verzerrtes FROG-Trace (\cref{fig:diel}). Als vergleich ist der Trace der optimalen
+Prismenkompressor-Messung in \cref{fig:opttrace} zu sehen. Aufgrund dieser
+Verzerrung und da der FROG-error sehr groß ist, ist keine sinnvolle
+Rekonstruktion der Pulsform möglich. Ebenso ist aus dem Spektrum keine
+sinnvolle Information zu entnehmen, außer dass hier erhebliche Verzerrungen
+auftreten. Die Pulsform wird von den dielektrischen Spiegeln regelrecht
+zerstört. Auch eine Kompensierung mit dem Prismenkompressor war unmöglich: Die
+Pulsdauer war absolut unberührt von dem Einschub des zweiten Prismas.
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{diel.jpg}
+    \caption{Experimenteller FROG trace für die Messung mit dielektrischen
+    Spiegeln. Der Trace ist sehr verzerrt, wodurch keine sinnvolle
+Rekonstruktion der Pulsform möglich ist. }
+    \label{fig:diel}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{opttrace.jpg}
+    \caption{Experimenteller FROG trace der optimalen Prismenkompressormessung.}
+    \label{fig:opttrace}
+\end{figure}
+
+\subsection{Rechteckiges Spiegelpaar}
+Für die Rechteckspiegel mit jeweils 5 Reflektionen zeichnet sich ein ähnliches
+Bild, wie für die dielektrischen Spiegel ab. Der FROG-Trace ist verzerrt
+und der FROG error ist groß ebenso sind der rekonstruierte FROG trace stark
+unterschiedlich vom experimentellen. Die Ergebnisse sind in \cref{fig:chirpspiegel1}
+für die unkompensierte, sowie in \cref{fig:chirpspiegel2} für die kompensierte
+Messung zu sehen. Allerdings sind die Verzerrungen hier nicht so stark wie
+zuvor. Die Pulsintensität, sowie das Spektrum mit Phase sind in
+\cref{fig:chirptemp,fig:chirpspec} zu sehen. Man erkennt eine deutliche
+Phasenfluktuation, sowie eine große Pulsbreite bei den kompensierten
+Prismenkompressoreinstellungen. Die Messungen in optimaler Einstellung sind
+stattdessen mit Ausnahme von einigen Einschneidungen in der Intensitätnahezu
+Gaußförmig, wenn auch mit deutlich größerer Pulsdauer im Vergleich zu den 
+metallischen Spiegeln.
+
+
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{chirpsp1.jpg}
+    \caption{Experimenteller FROG trace des Spiegelpaares}
+    \label{fig:chirpspiegel1}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{chirpsp2.jpg}
+    \caption{Rekonstruierter FROG trace des Spiegelpaares}
+    \label{fig:chirpspiegel2}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \input{chirptemp}
+    \caption{Experimenteller FROG trace des Spiegelpaares}
+    \label{fig:chirptemp}
+\end{figure}
+\begin{figure}[]
+    \centering
+    \input{chirpspec}
+    \caption{Rekonstruierter FROG trace des Spiegelpaares}
+    \label{fig:chirpspec}
+\end{figure}
+
 \section{Diskussion}
 \cite{tidecks1990current}
 
