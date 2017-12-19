@@ -15,7 +15,7 @@ set y2range [-3:3]
 set y2tics
 set ytics nomirror
 
-set xlabel "Wellenllänge $\\lambda$ [nm]"
+set xlabel "Wellenlänge $\\lambda$ [nm]"
 set ylabel "Spektrale Intensität $S$"
 set y2label "Phase $\\Phi$ [rad]"
 

@@ -12,7 +12,7 @@ set xrange [750:850]
 set yrange [0:1]
 set y2range [-5:5]
 
-set xlabel "Wellenllänge $\\lambda$ [nm]"
+set xlabel "Wellenlänge $\\lambda$ [nm]"
 set ylabel "Spektrale Intensität $S$"
 set y2label "Phase $\\Phi$ [rad]"
 
