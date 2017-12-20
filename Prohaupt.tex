@@ -422,30 +422,38 @@ zu bestimmen.
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Prismenkompressor}
-Zunächst wird die Vermessung des Prismenkompressors analysiert. Dafür werden
-für unterschiedlichen Einschub des zweiten Prismas gemessenen zeitlichen
-Pulsintensitäten sowie das Spektrum verglichen. Um die Insertion $I$ des
+Zunächst wird die Vermessung des Prismenkompressors analysiert. Um die Insertion $I$ des
 Prismas zu bestimmen, wurde der Wert der Millimeterschraube bei der optimalen
 Einstellung mit minimaler Pulsdauer (``opt'') von jenem abgezogen, bei welchem
 die Bandbreite aufgrund des Abschneidens des Lasers durch Verfehlen des zweiten
 Prismas geringer wurde. Dies ist jedoch eine grobe Abschätzung, da der genaue
 Zeitpunkt des Verfehlens aufgrund des endlichen Laserdurchemssers willkürlich
-war. Die Idee ist, dass das Abschneiden einer Insertion von $0\;mm$ bedeutet. Die gemessene zeitliche Pulsintensität der ersten Laserausgangsbandbreite ist in
+war. Die Idee ist, dass das Abschneiden einer Insertion von $0\;$mm bedeutet.
+Demnach wurden alle anderen Werte der Millimeterschraube von diesem abgezogen. 
+Der optimale Einschub mit Pulsdauer ist somit $I_2=2.84$. Für die gemessene
+Trägerwellenlänge bei dieser Einstellung wurde $\lambda_0=790\;$nm bestimmt. Die
+Pulsdauer ergab $\tau_0=24.5\;$fs, die Bandbreite $\Delta\omega_0=46.3\;$nm,
+was mit der Umrechnungsformel $\Delta\omega=\frac{2\pi\Delta\lambda}{\lambda_0^2}$ einer Kreisfrequenzbandbreite von $\Delta\omega=14.0\;$fs entspricht.
+Um die Pulscharakteristiken bei optimaler Prismeneinstellung zu erkennen,
+werden die für unterschiedlichen Einschub des zweiten Prismas gemessenen zeitlichen
+Pulsintensitäten sowie das Spektrum verglichen. 
+Die gemessene zeitliche Pulsintensität der ersten Laserausgangsbandbreite ist in
 \cref{fig:temp1} in Abhängigkeit von der Insertion $I$ aufgetragen. Ebenso
 eingetragen sind die gemessen Phasen $\Phi$. Es ist zu beachten, dass es sich
 hier um den Absolutbetrag der Phase handelt, da das Vorzeichen aufgrund der
 Zeitumkehrungsymmetrie von Grenouille keine Bedeutung hat. Um den linearen Chirp, also den Term zweiter Ordnung in \cref{eq:taylor} zu bestimmen, wird um das
 Phasenmaximum bei optimale Prismeneinstellung eine Funktion mit Ansatz
-$\frac{1}{2}ax^2+bx$ gefittet. Der Term $a$ ist nach \cref{eq:taylor} die
+$\frac{1}{2}a(x-b)^2$ gefittet. Der Term $a$ ist nach \cref{eq:taylor} die
 zweite Ableitung der Phase nach der Zeit und gibt somit den zeitlichen Chirp
-an. Der Term $b$ gibt an, um wie viel sich das Spektrum verschiebt.
-In \cref{fig:spec1} ist das vermessene Spektrum, sowie die spektralen Phasen
-der ersten laserbandbreite für verschiedene $I$ aufgetragen. Wie bei den
-zeitlichen Intensitäten wird auch hier die Phase für die optimale Einstellung
-mit einem quadratischen Polynom gefittet. Der quadratische Term ist der lineare Chirp,
+an. Der Term $b$ gibt an, um wie viel sich das Spektrum verschiebt. In \cref{fig:spec1} ist das vermessene Spektrum, sowie die spektralen Phasen der ersten Laserbandbreite für verschiedene $I$ aufgetragen. Wie bei den zeitlichen Intensitäten wird auch hier die Phase für die optimale Einstellung mit einem quadratischen Polynom gefittet. Der quadratische Term ist der lineare Chirp,
 welcher für eine Pulsverbreiterung im Zeitraum verantwortlich ist.
+Dieser muss allerdings noch in fs$^2$ umgerechnet werden. Nach \cref{eq:gvd}
+und der Kettenregel gilt $\diff[2]{\varphi}{\omega}=\frac{\lambda^2}{2\pi c)^2}\left(
+\lambda^2\diff[2]{\varphi}{\lambda}+2\lambda\diff{\varphi}{\lambda} \right)$.
+Der zweite Term kann vernachlässigt werden, da um ein Extremum gefittet wird. Man
+erhält eine Gruppengeschwindigkeitsdispersion von GDD$_0=20.26\pm6\;$fs$^2$.
 Gleiches wird ebenfalls für die zweite Ausgangsbandbreite von
-$\braket{\omega^2}=???$ berechnet. Die Intensität und das Spektrum mit Phasen
+$\braket{\lambda^2}=27\pm1\;$nm berechnet. Die Intensität und das Spektrum mit Phasen
 ist jeweils in \cref{fig:temp2} und \cref{fig:spec2} aufgetragen. Es wurde
 versäumt, für diese zweite Bandbreite eine neue optimale
 Prismenkompressorposition zu bestimmten, demnach ist mit ``opt'' hier weiterhin
@@ -453,17 +461,18 @@ die optimale Position der ersten Bandbreite bezeichnet.
 Die Ergebnisse der Regressionen sind in Tabelle \cref{tab:fits}
 zusammengefasst.
 
-
 \begin{table}
     \centering
-    \begin{tabular}[]{|c|c|c||c|c|c|}
+    \begin{tabular}[]{||c|c|c||c|c|c||}
         \hline
-        $a$&$b$&$\chi^2$&$a$&$b$&$\chi^2$\\\hline
-        $0.001507\pm0.000014$&$-0.001793\pm0.000054$&$2e-6$&$0.000727\pm0.000021$&$793.88\pm0.60$&$0.003$\\\hline
-    $0.000555\pm0.000003$&$1.612\pm0.034$&$2e-6$&$0.001815\pm0.000046$&$797.81\pm0.11$&$1e-4$\\\hline
+        &\multicolumn{2}{|c||}{Intensität}&\multicolumn{3}{|c||}{Spektrum}\\\hline\hline
+        &$a\,\{\diff[2]{\Phi}{t}\}$\;[fs$^{-2}$]&$b\, \{t_0\}\;$[fs]&$a\,\{\diff[2]{\varphi}{\lambda}\}$\;[nm$^{-2}$]&$\diff[2]{\varphi}{\omega}$\;[fs$^{-2}$]&$b\, \{\lambda_0\}\;$[nm]\\\hline
+       $\Delta\lambda_1$&$0.001507\pm0.000014$&$-0.001793\pm0.000054$&$0.000727\pm0.000021$&$20\pm6$&$793.88\pm0.60$\\\hline
+       $\Delta\lambda_2$&$0.000555\pm0.000003$&$1.612\pm0.034$&$0.001815\pm0.000046$&$51\pm13$&$797.81\pm0.11$\\\hline
     \end{tabular}
     \caption{Ergebnisse der quadratischen Fits für die Phase und die
-    spektrale Phase der optimalen Prismenkonfiguration.}
+    spektrale Phase der optimalen Prismenkonfiguration.
+    $\Delta\lambda_1=55\pm1$\;nm, $\Delta\lambda_2=27\pm1$\;nm.}
     \label{tab:fits}
 \end{table}
 
