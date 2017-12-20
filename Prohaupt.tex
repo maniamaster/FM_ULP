@@ -85,30 +85,45 @@
 
 \section{Einleitung}
 \label{sec:einleitung}
+In dem Bereich der Optik wurden in den letzten Jahren Laser entwickelt, die in
+der Lage sind, Pulse zu erzeugen, welche nur einige Femtosekunden lang sind. Da
+man für die Messung von kurzen Phänomenen einen physikalischen Prozess
+benötigt, der noch kürzer ist, hat diese Erfindung einen Einblick in viele
+dynamische Prozesse auf der Femtosekundenskala. Ein Beispiel ist der Bereich
+der Femtochemie.
+Da Ultrakurze Pulse aufgrund der Unschärferelation aus sehr vielen Frequenzen
+bestehen, sind sie besonders von Dispersion betroffen. Es treten eine Vielzahl
+von zeitlichen, aber auch räumlichen Dispersionen und Verzerrungen auf, die
+exemplarisch in diesem Versuch sowohl qualitativ als auch quantitativ
+untersucht werden. 
+Es wird ein GRENOUILLE Pulscharakterisierungsgerät verwendet, um diese
+Verzerrungen wie räumliche und zeitliche Dispersion, Chirp und den Pulse-Front
+Tilt zu messen. Dabei kommen verschiedene optische Bauteile zum Einsatz, um
+deren Einfluss auf den Puls zu untersuchen. Ein Prismenkompressor wird
+verwendet, um die Verzerrungen mit theoretischen Erwartungen zu vergleichen.
 \section{Theorie}
 \label{sec:theorie}
 \subsection{Grundlagen}
 Zur Beschreibung Ultrakurzer Laserpulse verwendet man einen semiklassischen
 Ansatz, bei dem die Maxwell-Gleichungen für eine makroskopische Polarisation
 gelöst wird. Im Folgenden wird das Vektorfeld des elektrischen Feldes $\vec E$
-durch einen Skalar $E$ genähert [Diels]. Hiermit wird eine für das Experiment
+durch einen Skalar $E$ genähert \cite{Diels2006}. Hiermit wird eine für das Experiment
 relevante Polarisationsrichtung beachtet. Im Allgemeinen sind auch Effekte
 möglich, bei denen verschiedene Polarisationsrichtungen miteinander koppeln,
 was eine genauere Betrachtung erfordert.
-Ausgehend von dem elektrischen Feld $E(t)$ definiert man mithilfe der Fourier
-Transformation das komplexe Spektrum
+Ausgehend von dem elektrischen Feld $E(t)$ definiert man mithilfe der Fouriertransformation das komplexe Spektrum
 $\tilde{E}(\omega)=\mathcal{F}[E(t)]=\int_\mathbb{R}E(t)e^{-i\omega t}\d t
 \label{eq:FT}$.
 Die Rücktransformation ergibt sich zu $E(t)=\mathcal{F}^{-1}[\tilde
 E(\omega)]=\frac{1}{2\pi}\int_{\mathbb R}\tilde E(\omega)e^{i\omega t}\d
 \omega$. Dies funktioniert aufgrund der Linearität der Maxwell Gleichungen. Die
 Lösung kann somit in eine Superposition von ebenen Wellen zerlegt werden. Hier
-ist $\omega$ die Kreisfrequenz der ebenen Welle. Nach konvention wird häufig
+ist $\omega$ die Kreisfrequenz der ebenen Welle. Nach Konvention wird häufig
 nur der positive Anteil des Spektrums betrachtet. Er hat aufgrund der
-Reellwertigkeit von $E$ den vollen Informationsgehalt
-[Diels]. Bei der Fourier-Rücktransformation integriert man so nur über alle
-positiven $\omega$ [Diels].
-Ein Puls wird nun beschrieben durch [Trebino lec]
+Reellwertigkeit von $E$ den vollen Informationsgehalt \cite{Diels2006}
+. Bei der Fourier-Rücktransformation integriert man so nur über alle
+positiven $\omega$.
+Ein Puls wird nun beschrieben durch \cite{trebinolec}
 \begin{align}
     E(t)=\frac{1}{2}\sqrt{I(t)}\exp\left(i\left[ \omega _0 t-\Phi(t)
     \right]\right),
@@ -125,8 +140,8 @@ spektrale Intensität einführen. Somit gilt $\tilde
 E(\omega)=\sqrt{S(\omega)}\exp(-i\varphi(\omega))\label{eq:spectrum}$, wobei
 $\varphi(\omega)$ die spektrale Phase ist. Diese ist zentrale Größe bei der 
 Beschreibung von gechirpten Pulsen (siehe unten).
-Die Beschreibung des Spektrums ist auch mithilfe der Wellelänge $\lambda$
-möglich. Die Umrechnung ergibt sich zu [Trebino lec]:
+Die Beschreibung des Spektrums ist auch mithilfe der Wellenlänge $\lambda$
+möglich. Die Umrechnung ergibt sich zu \cite{trebinolec}:
 \begin{align}
     S_\lambda(\lambda)=S_\omega\left(\frac{2\pi c}{\lambda^2}\right)\frac{2\pi
     c}{\lambda^2}.
@@ -135,7 +150,8 @@ möglich. Die Umrechnung ergibt sich zu [Trebino lec]:
 
 
 \subsection{Instantane Frequenz und Chirp}
-Die instantane Frequenz eines ultrakurzen Pulses ist definiert als [trebino lec]
+Die instantane Frequenz eines ultrakurzen Pulses ist definiert als
+\cite{trebinolec} 
 \begin{align}
     \omega_{\text{inst}}=\omega_0-\diff{\phi}{t},
     \label{eq:instfrequ}
@@ -149,29 +165,34 @@ mit der Phase $\phi$ und der Trägerfrequenz $\omega_0$. Man kann nun sowohl die
 Hier ist $\varphi_1=\diff{\varphi}{\omega}|_{\omega=\omega_0}$ der sogenannte
 ``group delay''(GD) und
 $\varphi_2=\diff[2]{\varphi}{\omega}|_{\omega=\omega_0}$ die ``group delay
-dispersion (GDD). Hieraus ist zu sehen: Eine nichtverschwindendes $\phi_1$
-erzeugt nach \cref{eq:instfrequ} einen konstanten offset in der instantenen
-Frequenz. Dies resultiert nach dem Fourier shift theorem [CITE] zu einer
+dispersion (GDD). Hieraus ist zu sehen: Ein nicht verschwindendes $\phi_1$
+erzeugt nach \cref{eq:instfrequ} einen konstanten Offset in der instantanen
+Frequenz. Dies resultiert nach dem Fourier shift theorem \cite{Diels2006} in einer
 Verschiebung im Spektrum. Andersherum erzeugt ein nicht verschwindender GD
-einen offset in der temporalen Intensität. Dies ist zur bestimmung von
+einen Offset in der temporalen Intensität. Dies ist zur Bestimmung von
 Pulslängen irrelevant. Ist jedoch $\varphi_2$ ungleich Null, so kommt es zur
 Dispersion: Die Gruppengeschwindigkeit ändert sich für verschiedene Frequenzen
-unterschiedlich und der Puls verläuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nichtverschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
+unterschiedlich und der Puls verläuft. Einen solchen Puls nennt man (linear) gechirpt. Analoges passiert bei einem nicht verschwindenden $\phi_2$. Die instantane Frequenz ändert sich hier linear mit der Zeit.
 
 \subsection{Gaußpuls und Bandprodukt}
 \label{seq:bandprod}
-Die am einfachst zu handhabene Pulsform ist die eines Gaußpulses: [DIELS]
+Die am einfachsten zu handhabende Pulsform ist die eines Gaußpulses:
+\cite{Diels2006} 
 \begin{align}
     E(t)=E_0\exp\left[-2\ln 2\left(\frac{t}{\tau_{\text{FWHM}}}\right)\right].
     \label{eq:gaus}
 \end{align}
-$\tau_{\text{FWHM}}$ bezeichnet die ``full-width half maximum'', also die Halbwertsbreite des Pulses, welche eine von vielen Definitionen zur Beschreibung der Puls- oder Spektralbreite ist. Sie ist definiert als die Breite an der Halben Pulshöhe. Im Folgenden wird stets $\tau\equiv\tau_{\text{FWHM}}$ gesetzt. Der Gaußpuls ist neben seiner einfachen Handhabbarkeit auch eine der am häufigsten auftretenden Pulsformen.\\
-Da (Kreis-) Frequenz und Zeit konjugierte Variablen einer Fourier Transformation sind, gilt für sie die Unschärferelation, genannt ``Zeit-Bandbreiteprodukt'': [Diels]
+$\tau_{\text{FWHM}}$ bezeichnet die ``full-width half maximum'', also die Halbwertsbreite des Pulses, welche eine von vielen Definitionen zur Beschreibung der Puls- oder Spektralbreite ist. Sie ist definiert als die Breite an der halben Pulshöhe. Im Folgenden wird stets $\tau\equiv\tau_{\text{FWHM}}$ gesetzt. Der Gaußpuls ist neben seiner einfachen Handhabbarkeit auch eine der am häufigsten auftretenden Pulsformen.\\
+Da (Kreis-) Frequenz und Zeit konjugierte Variablen einer Fourier
+Transformation sind, gilt für sie die Unschärferelation, genannt
+``Zeit-Bandbreite-Produkt'': \cite{Diels2006} 
 \begin{align}
     \braket{\omega^{2}}\braket{t^{2}} \geq \frac{M^{4}}{4}\kappa_c,
     \label{eq:time-bandwidth}
 \end{align}
-wobei $\braket{\Delta\omega^{2}}$ bzw $\braket{\Delta t^{2}}$ die Pulsbreite bzw die Bandbreite -berechnet durch das zweite Moment [Diels]- bezeichnet. $M$ ist ein Formfaktor, der die Abweichung zum idealen Gaußpuls bezeichnet [CITE]. $\kappa_c$ ist der Chirpfaktor, welcher angibt, dass bei gechirpten Pulsen das Zeit-Bandbreiteprodukt größer ist, als für ungechirpte Pulse. Einen ungechirpten Puls bezeichnet man demnach auch als ``Fourier-limitiert''. Fourier-limitierte Pulse sind also für eine konstante Bandbreite stets am kürzesten.
+wobei $\braket{\Delta\omega^{2}}$ bzw $\braket{\Delta t^{2}}$ die Pulsbreite
+bzw die Bandbreite -berechnet durch das zweite Moment- bezeichnet. $M$ ist ein
+Formfaktor, der die Abweichung zum idealen Gaußpuls bezeichnet \cite{Diels2006}. $\kappa_c$ ist der Chirpfaktor, welcher angibt, dass bei gechirpten Pulsen das Zeit-Bandbreiteprodukt größer ist, als für ungechirpte Pulse. Einen ungechirpten Puls bezeichnet man demnach auch als ``Fourier-limitiert''. Fourier-limitierte Pulse sind also für eine konstante Bandbreite stets am kürzesten.
 Die Umrechnung von den zweiten Momenten zur Halbwertsbreite ist für Gaußpulse
 einfach über die Varianz einer Gaußverteilung zu berechnen. Es gilt
 $\tau=2\sqrt{2 \ln 2}\braket{t^2}$. Aus \cref{eq:time-bandwidth} mit $M=1$ und
@@ -185,19 +206,29 @@ erhält man
 \end{align}
 
 \subsection{Dispersion im Medium}
-Bewegt sich ein Lichtpuls durch ein Medium, so wird eine Transferfunktion im Frequenzbild zum elektrischen Feld multipliziert [trebino lec]: $\tilde E_{\text{out}}(\omega)=\tilde{E}_{\text{in}}(\omega)\exp(-\alpha(\omega)L)\exp(-i n(\omega)k_0L)$. Hier beschreibt $\alpha$ die Absorption, welche in diesem Versuch ignoriert wird. $n(\omega)$ ist der Brechungsindex des Materials in Abhängigkeit von der Frequenz, $k_0$ ist die Wellenzahl bei der Trägerfrequenz und $L$ ist die Länge des Materials. Relevant für die Verbreiterung von Pulslängen ist die Modulation der spektralen Phase. Aufgrund der Form der Transferfunktion wird diese direkt hinzuaddiert [trebino]:
+Bewegt sich ein Lichtpuls durch ein Medium, so wird eine Transferfunktion im
+Frequenzraum zum elektrischen Feld multipliziert \cite{trebinolec}: $\tilde
+E_{\text{out}}(\omega)=\tilde{E}_{\text{in}}(\omega)\exp(-\alpha(\omega)L)\exp(-i
+n(\omega)k_0L)$. Hier beschreibt $\alpha$ die Absorption, welche in diesem
+Versuch ignoriert wird. $n(\omega)$ ist der Brechungsindex des Materials in
+Abhängigkeit von der Frequenz, $k_0$ ist die Wellenzahl bei der Trägerfrequenz
+und $L$ ist die Länge des Materials. Relevant für die Verbreiterung von
+Pulslängen ist die Modulation der spektralen Phase. Aufgrund der Form der
+Transferfunktion wird diese direkt hinzuaddiert \cite{trebinolec}:
 \begin{align}
     \varphi_{\text{out}}(\omega)=\varphi_{\text{in}}+n(\omega)k_0L.
     \label{eq:transferphase}
 \end{align}
-Eine Taylornäherung des Wellenvektors $k(\omega)=n(\omega)k_0$ ergibt analog zu \cref{eq:taylor} die sog. ``group velocity dispersion'' (GVD): [TREBINO]
+Eine Taylornäherung des Wellenvektors $k(\omega)=n(\omega)k_0$ ergibt analog zu
+\cref{eq:taylor} die sog. ``group velocity dispersion'' (GVD): \cite{trebinolec} 
 \begin{align}
     \text{GVD}=k''(\omega_0)=\frac{1}{2}\frac{\lambda_0^3}{2\pi c_0^2}\diff[2]{n}{\lambda},
     \label{eq:gvd}
 \end{align}
 mit der Trägerwellenlänge $\lambda_0$ und der Lichtgeschwindigkeit $c_0$.
 Es gilt GDD $=$ GVD $ L$.
-Der wellenlängenabhängige Brechungsindex berechnet sich aus der Sellmeier Gleichung [CITE refr.]:
+Der wellenlängenabhängige Brechungsindex berechnet sich aus der Sellmeier
+Gleichung \cite{refr}:
 \begin{align}
     n^2(\lambda)=\frac{B_1 \lambda^2}{\lambda^2-C_1}+\frac{B_2 \lambda^2}{\lambda^2-C_2}+\frac{B_3 \lambda^2}{\lambda^2-C_3},
     \label{eq:sellmeier}
@@ -205,16 +236,16 @@ Der wellenlängenabhängige Brechungsindex berechnet sich aus der Sellmeier Glei
 mit materialspezifischen numerischen Konstanten $B_i, C_i$, die z.B. in
 \cite{refr} aufgelistet sind.\\
 Für die Veränderung der Pulsbreite in Abhängigkeit der GDD gilt folgende
-Beziehung, die in dieser Version durch Wigner-Distributionen [DIELS]
+Beziehung, die in dieser Version durch Wigner-Distributionen \cite{Diels2006} 
 hergeleitet wird:
 \begin{align}
     \braket{t^2}=\braket{t_0^2}+\left[ \diff[2]{\varphi}{\omega}|_{0}
     \right]^2\braket{\omega^2},
     \label{eq:pulsverbreiterung}
 \end{align}
-der Chirp, den der Puls erfährt berechnet sich also durch ``GDD $\times$
+der Chirp, den der Puls erfährt, berechnet sich also durch ``GDD $\times$
 Bandbreite''. Aus den Umrechnungsregeln in \cref{seq:bandprod} kann man somit
-den Effekt von einer group velocity dispersion auf einen Puls mit gegebener
+den Effekt von einer GVD auf einen Puls mit gegebener
 Bandbreite berechnen.
 \section{Experimentelle Methoden und Messgrößen}
 \subsection{Spatial chirp}
@@ -242,8 +273,8 @@ schrägen Glas ein, was in \cref{fig:spatialchirp} aufgezeigt ist.
         ein schiefes Glas (rechts) \cite{tutspatialchirp}}
     \label{fig:spatialchirp}
 \end{figure}
-\subsection{Pulse front tilt}
-Eine weitere räumliche Verzerrung ist der sog. Pulse front tilt. Er gibt an, um
+\subsection{Pulse Front Tilt}
+Eine weitere räumliche Verzerrung ist der sog. Pulse Front Tilt. Er gibt an, um
 wie viel die Pulsfront eines Laserpulses gegenüber der optischen Achse geneigt
 ist. Er wird hervorgerufen durch Winkeldispersion oder auch durch das
 Durchqueren eines räumlich gechirpten Pulses durch ein lineares Medium
@@ -251,7 +282,7 @@ Durchqueren eines räumlich gechirpten Pulses durch ein lineares Medium
 \begin{figure}[]
     \centering
     \includegraphics[width=0.5\textwidth]{pft.jpeg}
-    \caption{Pulse front tilt verursacht durch Winkeldispersion (oben) und
+    \caption{Pulse Front Tilt verursacht durch Winkeldispersion (oben) und
         räumlichen Chirp (unten) \cite{Akturk:04}.}
     \label{fig:pft}
 \end{figure}
@@ -260,7 +291,7 @@ Durchqueren eines räumlich gechirpten Pulses durch ein lineares Medium
 \begin{figure}[]
     \centering
     \includegraphics[width=\textwidth]{pc.png}
-    \caption{Schematischer Aufbau eines Prismenkompressors. Ein ungechirper
+    \caption{Schematischer Aufbau eines Prismenkompressors. Ein ungechirpter
     Puls tritt ein und wird temporal gechirpt, da unterschiedliche Wellenlängen
     andere Propagationspfade nehmen. Bei entgegengesetztem Durchgang wird
     ersichtlich: Ein gechirpter Puls wird durch einen Prismenkompressor bei
@@ -270,19 +301,20 @@ Durchqueren eines räumlich gechirpten Pulses durch ein lineares Medium
     \label{fig:pc}
 \end{figure}
 Mithilfe des Prismenkompressors (PC) kann ein gechirpter Puls wieder zu einem
-(nahezu) fourierlimitierten Puls komprimiert werden. Der Aufbau des
+(nahezu) Fourier-limitierten Puls komprimiert werden. Der Aufbau des
 Prismenkompressors ist in \cref{fig:pc} zu sehen. Der Puls durchquert zwei
 Prismen, die entgegengesetzt parallel zueinander aufgestellt sind. Dabei sind
 sie so positioniert, dass der Puls beim ersten Prisma gerade durch die Spitze
-durchquert. Nach Snell's Gesetz verlassen die unterschiedlichen Wellenlängen
+gelangt. Nach Snell's Gesetz verlassen die unterschiedlichen Wellenlängen
 das erste Prisma in unterschiedlichen Winkeln. Dadurch durchqueren sie
 unterschiedlich lange Strecken im zweiten Prisma. Durch die spezielle
 Positionierung verlassen alle Wellenlängen das zweite Prisma wieder parallel,
 aber mit einem räumlichen Chirp. Um diesen auszugleichen wird der Strahl an
-einem spiegel zurückreflektiert und nimmt somit den gleichen Weg erneut durch
+einem Spiegel zurück reflektiert und nimmt somit den gleichen Weg erneut durch
 den Prismenkompressor. Durch die unterschiedlichen Weglängen der verschiedenen
 Frequenzen kann bei richtiger Positionierung des zweiten Prismas die Group
-Delay Dispersion negativ werden, wodurch ein gechirpter Puls entchirpt werden kann. Für die GDD des Prismenkompressors gilt: [DIELS]
+Delay Dispersion negativ werden, wodurch ein gechirpter Puls entchirpt werden
+kann. Für die GDD des Prismenkompressors gilt: \cite{Diels2006}<++> 
 \begin{align}
     \diff[2]{\varphi}{\omega}|_{\omega_0}=2\frac{\lambda_0^2}{2\pi c_0^2}\left[
     L_g\diff[2]{n}{\lambda}|_{\lambda_0}-(4L+\frac{L_g}{n(\lambda_0)^3})(\diff{n}{\lambda}|_{\lambda_0})^2
@@ -290,9 +322,9 @@ Delay Dispersion negativ werden, wodurch ein gechirpter Puls entchirpt werden ka
     \label{eq:pc}
 \end{align}
 wobei $\lambda_0$ die Trägerwellenlänge, $L_g$ die Weglänge im Glas für die
-Trägerwellenlänge und $L$ der Abstand der Spitzen der beiden Primsen ist. Für
-symmetrisch positionierte Prismen in Brewsterwinkelkonfiguration gilt
-$L_g=2I\frac{1}{\sqrt{1+n(\lambda_0)^2}}$ mit dem Einschub (insertion) des
+Trägerwellenlänge und $L$ der Abstand der Spitzen der beiden Prismen ist. Für
+symmetrisch positionierte Prismen in Brewsterwinkel-Konfiguration gilt
+$L_g=2I\frac{1}{\sqrt{1+n(\lambda_0)^2}}$ mit dem Einschub (Insertion) des
 zweiten Prismas $I$, welcher im Experiment mit der Millimeterschraube direkt
 eingestellt wird.
 
@@ -304,30 +336,29 @@ für solche besonders schwer, die Pulslänge zu messen.
 Es gibt verschiedene Methoden: Ein erste Ansatz ist es, mithilfe eines
 Michelson-Interferrometers die Autokorrelation $A(\tau)=\int E(t)E^*(t-\tau)\d
 t$ zu bestimmen. Aus der gemessenen Intensität lässt sich die grobe
-Pulsstruktur rekonstruieren. Autokorrelationsmethoden haben allerdings viele
-Probleme, wie die Unterschätzung der Pulslänge durch sog. kohärente Artefakte
-\cite{swampintro}. Zusätzlich ist es unmöglich, die Phase eines ultrakurze
+Pulsstruktur rekonstruieren. Autokorrelations-Methoden haben allerdings viele
+Probleme, wie die Unterschätzung der Pulslänge durch sogenannte kohärente Artefakte
+\cite{swampintro}. Zusätzlich ist es unmöglich, die Phase eines ultrakurzen
 Pulses mithilfe dieser Methoden zu messen.
 
 GRENOUILLE (Grating-eliminated No-nonsense Observation Of Ultrafast Incident
-Laser Light E Fields) behebt alle Probleme von Autokorrelaionsmethoden und
+Laser Light E Fields) behebt alle Probleme von Autokorrelations-Methoden und
 liefert zusätzliche Informationen über den Puls: Es basiert auf dem ``Frequency
-Resolved Optical Gating'' (FROG) [CITE FROG], bei dem die spektrale Intensität gegenüber
-der zeitlichen Verzögerung des Auftreffens auf den Detektor , der sogenannte
+Resolved Optical Gating'' (FROG) \cite{Trebino2012}, bei dem die spektrale Intensität gegenüber
+der zeitlichen Verzögerung des Auftreffens auf dem Detektor , der sogenannte
 Frog trace gemessen wird. Aus diesem wird mithilfe eines Algorithmus die
 Pulsdauer, die Bandbreite sowie die Phase und die spektrale Phase
 rekonstruiert. Bei GRENOUILLE wird ein vereinfachter Aufbau, bestehend aus
 einem Fresnelschen Biprisma und einem second-harmonic generation (SHG) Kristall
-verwendet. Der Aufbau und die Funktionsweise ist in \cref{fig:gren} zu sehen. Der breite SHG
-Kristall fächert die unterschiedlichen Wellenlängen entlang einer Dimension
+verwendet. Ein breiter SHG Kristall fächert die unterschiedlichen Wellenlängen entlang einer Dimension
 auf, während das Fresnelsche Biprisma in der anderen Dimension den Puls teilt
 und mit unterschiedlicher Verzögerung mit sich selbst interferieren lässt.
-Dadurch entsteht der Frog trace, welcher den Puls überestimiert. Somit lassen
+Dadurch entsteht der Frog trace, welcher den Puls überbestimmt. Somit lassen
 sich alle relevanten Informationen eines ultrakurzen Pulses rekonstruieren
-[CITE]. Insbesondere liefert die spektrale Phase den Chirp des Pulses. Es ist
+\cite{SwampOpticsFrog}. Insbesondere liefert die spektrale Phase den Chirp des Pulses. Es ist
 jedoch darauf zu Achten, dass die Methode symmetrisch gegenüber der
 Zeitrichtung ist und deswegen der Vorzeichen des Chirps nicht bestimmt wird.
-Zusätzlich werden automatisch der pulse front tilt, sowie der räumliche Chirp
+Zusätzlich werden automatisch der Pulse Front Tilt, sowie der räumliche Chirp
 gemessen. Sie spiegeln sich im Frog trace jeweils als Verschiebung auf der
 Verzögerungsachse und als Scherung des Traces wider.
 
@@ -336,11 +367,11 @@ Verzögerungsachse und als Scherung des Traces wider.
 \section{Durchführung}
 \label{sec:durchfuehrung}
 \subsection{Aufbau}
-Der Versuchsafbau ist in \cref{fig:aufbau} zu sehen. Die verwendete Laserquelle
+Der Versuchsaufbau ist in \cref{fig:aufbau} zu sehen. Die verwendete Laserquelle
 ist ein Spectra Physics Tsunami mit einer zentralen Wellenlänge von 800\;nm,
-einer durchschnittsleistung von 400\;mW, einer Pulsrate von 76\;MHz und einer
+einer Durchschnittsleistung von 400\;mW, einer Pulsrate von 76\;MHz und einer
 Pulsdauer von 22\;fs bei einer Bandbreite von 58\;nm. Der Strahl durchquert
-zunächst einer $\lambda/2$ Platte und wird p-polarisiert. Anschließend
+zunächst eine $\lambda/2$ Platte und wird p-polarisiert. Anschließend
 durchquert er den Prismenkompressor. Der Abstand der Prismen von Spitze zu
 Spitze wurde gemessen und beträgt $43,2\pm0.3$\;cm. Der Prismeneinschub wird
 direkt über eine Millimeterschraube variiert. Dem Laser stehen nun
@@ -349,7 +380,7 @@ eingestellt werden können. Pfad 1 besteht aus metallischen Spiegeln und einer
 optischen Bank, auf die verschiedene Glasfenster aus BK7 oder MgF2, sowie ein
 Glasspat und ein Langpass Filter geschraubt werden können. Pfad 2 besteht aus
 dielektrischen Spiegeln. Auf Pfad 3 durchquert der Strahl ein Spiegelpaar mit
-jeweils 5 Reflektionen. Eshandelt sich hierbei um gechirpte Spiegel, was die
+jeweils 5 Reflektionen. Es handelt sich hierbei um gechirpte Spiegel, was die
 spätere Auswertung zeigt. Alle drei Pfade enden in dem Messinstrument, einem
 Swamp Optics Grenouille (Modell 8-20-USB). Zur Justage der Strahlengänge stehen
 diverse Justagespiegel, Infrarot-Irisblenden und Infrarotkarten bereit.
@@ -370,12 +401,12 @@ diverse Justagespiegel, Infrarot-Irisblenden und Infrarotkarten bereit.
 Da es sich bei dem verwendeten Laser um einen der Klasse 4 handelt, sind
 zunächst einige Sicherheitshinweise zu beachten: Es müssen stets geeignete
 Laserschutzbrillen getragen werden. Alle reflektierenden Objekte müssen vor dem
-versuch abgelegt werden. Es sollte auch trotz der Schutzbrillen niemals direkt
+Versuch abgelegt werden. Es sollte auch trotz der Schutzbrillen niemals direkt
 in den Laserstrahl geschaut werden. Ebenso sollte vermieden werden, mit der
 Hand direkt in den Strahlengang zu fassen. Es ist besonders wichtig, dass stets
 der gesamte Strahlengang des Lasers bekannt ist, bevor dieser zur Propagation
 freigegeben wird. Deswegen müssen bei der Justage stets zwei Infrarotkarten und
-gegebenfalls weitere Beamdumps benutz werden, um den Strahlengang nach und nach
+gegebenfalls weitere Beamdumps benutzt werden, um den Strahlengang nach und nach
 durch die hinzugefügten optischen Elemente zu leiten. Niemals darf ein
 optisches Element ohne Blockieren des Lasers in den Strahlengang gestellt
 werden, da unerwartete Reflexe auftreten können.\\
@@ -383,14 +414,14 @@ werden, da unerwartete Reflexe auftreten können.\\
 Zunächst wird der Prismenkompressor ohne zusätzliche optische Elemente
 vermessen und somit auch seine optimale Position bestimmt. Dazu wird der Laser mithilfe der Irisblenden und den Justagespiegeln
 auf Strahlengang 1 justiert. Bei dieser und jeder anderen Messung muss der
-Laser zunächst mithilfe des space-Modus der Analysesoftware der Strahl in den
+Laser zunächst mithilfe des space-Modus der Analysesoftware Quick-Frog der Strahl in den
 Grenouille zentriert werden. Dies geschieht wieder mit Justagespiegeln und zwei
 Irisblenden. Wichtig ist, dass der erste Spiegel den Strahl auf die erste
 Irisblende ausrichtet, während der zweite Spiegel für die zweite Blende
 verwendet wird (``beam walking''). Anschließend kann die Software auf den
 time-mode gestellt werden um die Echtzeitdaten des Lasers zu sehen. Hierbei ist
 auf ausreichende, aber nicht zu große Intensität des auftreffenden Strahles zu
-achten, welche über die zweite $\lambda/2$ Platte unmittelbar vorm Analysator
+achten, welche über die zweite $\lambda/2$ Platte unmittelbar vor dem Analysator
 eingestellt werden kann.\\
 Um die optimale Kompressorposition zu bestimmen, wird der Einschub über die
 Millimeterschraube solange variiert, bis die gemessene Pulslänge (temporal
@@ -403,18 +434,18 @@ weitere Daten für unterschiedliche Prismenpositionen ermittelt.\\
 Nun werden Daten mit
 verschiedenen optischen Elementen, wie unterschiedlich dicken Gläsern aus BK7 und
 MgF2, sowie einem Glasspat und einem Langpassfilter auf der optischen Bank
-aufgenommen. Bei jedem optischen Element muss der Strahhl erneut in den
+aufgenommen. Bei jedem optischen Element muss der Strahl erneut in den
 Grenouille zentriert werden. Bei jeder Messung wird zunächst die Messung bei
 optimaler Kompressorposition durchgeführt. Anschließend wird versucht, die
 Pulsverbreiterungen mit dem Kompressor zu kompensieren, indem wieder die
 Pulslänge minimiert wird. Die Prismenpositionen werden erneut aufgeschrieben.
 Anschließend wird der Laser auf Strahlengang 2 justiert und es werden bei
-optiomaler Prismeneinstellung Daten für die dielektrischen Spiegel gespeichert
+optimaler Prismeneinstellung Daten für die dielektrischen Spiegel gespeichert
 und erneut wird versucht die Verzerrungen zu kompensieren.
 Als nächstes wird der Strahlengang 3 justiert und der Effekt der Spiegelpaare
 wird bei optimaler Prismenposition aufgenommen und versucht zu kompensieren.
 Nun wird die Bandbreite des Lasers verändert und die Messungen des
-Prismenkompressors und der der Glasfenster werden weiderholt.
+Prismenkompressors und der der Glasfenster werden wiederholt.
 Es wurde versäumt, für die zweite Bandbreite eine neue optimale Prismenposition
 zu bestimmen.
 
@@ -422,7 +453,7 @@ zu bestimmen.
 \section{Auswertung}
 \label{sec:auswertung}
 \subsection{Prismenkompressor}
-Zunächst wird die Vermessung des Prismenkompressors analysiert. Um die Insertion $I$ des
+Zunächst wird die Vermessung des Prismenkompressors analysiert. Um die Insertion $l$ des
 Prismas zu bestimmen, wurde der Wert der Millimeterschraube bei der optimalen
 Einstellung mit minimaler Pulsdauer (``opt'') von jenem abgezogen, bei welchem
 die Bandbreite aufgrund des Abschneidens des Lasers durch Verfehlen des zweiten
@@ -452,14 +483,17 @@ und der Kettenregel gilt $\diff[2]{\varphi}{\omega}=\frac{\lambda^2}{2\pi c)^2}\
 \lambda^2\diff[2]{\varphi}{\lambda}+2\lambda\diff{\varphi}{\lambda} \right)$.
 Der zweite Term kann vernachlässigt werden, da um ein Extremum gefittet wird. Man
 erhält eine Gruppengeschwindigkeitsdispersion von GDD$_0=20.26\pm6\;$fs$^2$.
-Gleiches wird ebenfalls für die zweite Ausgangsbandbreite von
+Gleiches wird ebenfalls für die zweite Ausgangs-Bandbreite von
 $\braket{\lambda^2}=27\pm1\;$nm berechnet. Die Intensität und das Spektrum mit Phasen
 ist jeweils in \cref{fig:temp2} und \cref{fig:spec2} aufgetragen. Es wurde
 versäumt, für diese zweite Bandbreite eine neue optimale
-Prismenkompressorposition zu bestimmten, demnach ist mit ``opt'' hier weiterhin
+Prismenkompressor-Position zu bestimmten, demnach ist mit ``opt'' hier weiterhin
 die optimale Position der ersten Bandbreite bezeichnet.
 Die Ergebnisse der Regressionen sind in Tabelle \cref{tab:fits}
-zusammengefasst.
+zusammengefasst. Die gemessene GDD ist besonders für die erste Bandbreite sehr
+gering im Vergleich zu den GDDs des Prismenkompressors (s.u.). Demnach ist der
+Puls nach dem Prismenkompressor in optimaler Einstellung nahezu gaußförmig.
+
 
 \begin{table}
     \centering
@@ -475,51 +509,174 @@ zusammengefasst.
     $\Delta\lambda_1=55\pm1$\;nm, $\Delta\lambda_2=27\pm1$\;nm.}
     \label{tab:fits}
 \end{table}
-
-
+Als nächstes wird die GDD des Prismenkompressors analysiert. Hierfür wird
+zunächst die theoretische GDD nach \cref{eq:pc} zusammen mit
+\cref{eq:sellmeier} berechnet. Das PC-Material ist N-LAK21. Die
+Ungenauigkeiten werden mit den Ungenauigkeiten $\sigma_L=3\;$mm,
+$\sigma_{l_2}=0.1\;$mm und $\sigma_{\Delta_{\lambda}}=1\;$mm nach der gauß'schem
+Fehlerfortpflanzungsformel berechnet. Da nach der vorherigen Auswertung bei
+optimaler PC Einstellung ein nahezu ungechirpter Puls vorliegt, wird der
+zugehörige theoretische GDD Wert des PC's von den anderen abgezogen. Als
+Resultat erhält man die GDD, die für die Pulsverbreiterung verantwortlich ist.
+Somit lässt sich die theoretische GDD des PC's ausrechnen. Ebenso wird aus den
+Messungen mit Kompensation die tatsächlich eingestellte GDD für die
+Kompensation berechnet.
+Aus der GDD wird schließlich die neue Pulslänge nach
+\ref{eq:pulsverbreiterung} bestimmt, wobei eine Ungenauigkeit der Pulslänge von
+$\sigma_\tau=3$\;fs angenommen wird. Die theoretischen und die tatsächlich
+gemessenen Pulslängen in Abhängigkeit der GDD des Prismenkompressors für beide
+Bandbreiten sind in \cref{fig:pckieran1,fig:pckieran2} zu sehen. Hierbei wurden
+beide Größen quadriert, um nach \cref{eq:pulsverbreiterung} einen linearen
+Zusammenhang zu bekommen. Für die erste
+Bandbreite sind die Messwerte in guter Übereinstimmung mit der Theorie.
+Lediglich die letzten beiden Messpunkte, bei denen der Laser bereits partiell
+vom Prisma abgeschnitten wurde, zeigen eine größere Abweichung. Für die zweite
+Bandbreite sind die Ergebnisse nur qualitativ korrekt, was aufgrund der
+Versäumung des Messens einer neuen optimalen Prismenposition zu erwarten ist.
 
 \begin{figure}[]
     \centering
     \input{temp1}
-    \caption{blah}
+    \caption{Intensität für verschiedene Einschübe $l$ mit Phase. Um die
+    optimale Phase wurde ein Polynomfit zweiter Ordnung
+    gefittet. $\Delta\lambda=55\pm1$.}
     \label{fig:temp1}
 \end{figure}
 \begin{figure}[]
     \centering
     \input{spec1}
-    \caption{blah}
+    \caption{Spektrale Intensität für verschiedene Einschübe $l$ mit spektraler Phase. Um die
+    optimale Phase wurde ein Polynomfit zweiter Ordnung gefittet. $\Delta\lambda=55\pm1$.}
     \label{fig:spec1}
 \end{figure}
 \begin{figure}[]
     \centering
     \input{temp2}
-    \caption{blah2}
+    \caption{Intensität für verschiedene Einschübe $l$ mit Phase. Um die
+    optimale Phase wurde ein Polynomfit zweiter Ordnung gefittet. $\Delta\lambda=27\pm1$.}
     \label{fig:temp2}
 \end{figure}
 \begin{figure}[]
     \centering
     \input{spec2}
-    \caption{blah2}
+    \caption{Spektrale Intensität für verschiedene Einschübe $l$ mit spektraler Phase. Um die
+    optimale Phase wurde ein Polynomfit zweiter Ordnung gefittet. $\Delta\lambda=27\pm1$.}
     \label{fig:spec2}
 \end{figure}
+
+\begin{figure}[]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{Eric/prismcomp}
+    \end{center}
+    \caption{Theoretische und tatsächlich gemessene Pulslänge in Abhängigkeit
+    von der am Prismenkompressor zum optimalen Puls hinzugefügten GDD für die
+    erste Laserbandbreite. Beide werte sind quadriert worden, um einen linearen Zusammenhang zu bekommen.
+    Bis auf die letzten beiden Werte, an denen der Strahl bereits vom Prisma
+    abgeschnitten wurde, liegt eine sehr gute Übereinstimmung zur Theorie vor.}
+    \label{fig:pckieran1}
+\end{figure}
+\begin{figure}[]
+    \begin{center}
+        \includegraphics[width=0.7\textwidth]{Eric/prismcomp2}
+    \end{center}
+    \caption{Theoretische und tatsächlich gemessene Pulslänge in Abhängigkeit
+    von der am Prismenkompressor zum optimalen Puls hinzugefügten GDD für die
+    zweite Laserbandbreite. Beide werte sind quadriert worden, um einen linearen
+    Zusammenhang zu bekommen. Da versäumt wurde, eine neue optimale
+    Prismenkompressor-Position zu bestimmen, stimmen Theorie und experimentelle
+    Messwerte hier nur qualitativ überein.}
+    \label{fig:pckieran2}
+\end{figure}
 \subsection{Glasfenster}
+Es wurden bei optimaler Prismenkonfiguration 5\;mm und 10\;mm BK7 Glas und
+5\;mm MgF2 Glasfenster in den Strahlengang gestellt. Nach
+\cref{eq:transferphase} erwartet man zwischen der GDD und der Weglänge im
+Medium einen linearen Zusammenhang. Die Theoriewerte werden anhand
+\cref{eq:transferphase} und \cref{eq:sellmeier} berechnet. Wieder wird mit den
+kompensierten Messungen, die tatsächlich hinzugefügte GDD berechnet. Die Daten,
+die in die theoretischen Werte einfließen, werden als unerheblich eingestuft.
+Für die Messwerte wird wieder die Fehlerfortpflanzung mit den Werten aus dem
+Prismenkompressor verwendet.
+Der lineare Zusammenhang wird erfüllt, was in \cref{fig:gddkieran} zu sehen ist.
+\begin{figure}[]
+    \begin{center}
+        \includegraphics[width=0.5\textwidth]{Eric/glasBK7}
+    \end{center}
+    \caption{Betrag der GDD in Abhängigkeit der Weglänge im Glas für BK7 für
+    die erste Bandbreite. In blau sind die Messwerte der kompensierten
+    Messungen, in rot die theoretisch erwarteten Werte aufgetragen. Die
+    Übereinstimmung ist außerordentlich gut.}
+    \label{fig:gddkieran}
+\end{figure}
+Für das Kippen des Glases um 30$^\circ$ erwartet man außer einem räumlichen
+Chirp (siehe unten) eine Verlängerung der Weglänge im Glas. Mithilfer der
+Snell'schen Formeln und elementarer Trigonometrie findet man
+\begin{align}
+    \text{GDD}=\frac{\lambda_0^3}{4\pi
+    c^2}\diff[2]{n}{\lambda}\frac{d}{\sqrt{1-\frac{\text{sin} ^2
+    \alpha}{n^2}}}.
+    \label{eq:tilt}
+\end{align}
+Bei der Messung wurde $\alpha=\pm30^\circ$ verwendet. Das Vorzeichen hat
+natürlich keinen Einfluss auf die Weglänge und damit auf die GDD.
+Die Resultate, inklusive derer für das MgF2 sind in Tabelle \cref{tab:glass}
+zusammengefasst. In der Messung hatte das MgF2 keinerlei Auswirkungen auf die
+Pulsbreite. Es wird vermutet, dass es sich hierbei um falsch abgespeicherte
+Daten handelt.
+Für die zweite Bandbreite ist aufgrund der fehlenden neuen Prismeneinstellung
+nur eine qualitative Betrachtung sinnvoll. Die Ergebnisse sind in Tabelle
+\cref{tab2} zu sehen.
+\begin{table}[]
+\centering
+\begin{tabular}{l|r|r|r|r}
+Material& $|GDD_{theo}|[\text{fs}^2]$. & $|GDD_{comp}|[\text{fs}^2]$&
+$\tau_{FWHM, meas}[\text{fs}]$&$\tau_{FWHM,VChirp}[\text{fs}]$ \\
+\hline
+$5\, \text{mm}$ BK7&114  &$112\pm20$  &29.6 &37.5 \\
+$10\, \text{mm}$ BK7&228  &$214\pm20$ &51.6 &66.7 \\
+$5\, \text{mm}$ MgF2&89  & $8\pm20$ &24.4 &24.7\\
+$5\, \text{mm}$ BK7 $+30^\circ$&121  &$120\pm20$&30.1 &39.1\\
+$5\, \text{mm}$ BK7 $-30^\circ$& 121 &$114\pm20$ &30.6 &39.1
+\end{tabular}
+\caption{Zu erwartende GDD durch die optischen Elemente verglichen mit der GDD,
+die beim Prismenkompressor für die Kompensierung der ersten Bandbreite eingestellt wurde. Ebenfalls eingetragen sind die gemessenen Pulslängen und jene, welche mit VCHIRP
+simuliert wurden.}
+\label{tab:glass}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{l|r|r|r}
+Material& $|GDD_{theo}|[\text{fs}^2]$. & $|GDD_{comp}|[\text{fs}^2]$&
+$\tau_{FWHM, meas}[\text{fs}]$\\
+\hline
+$5\, \text{mm}$ BK7&112 &$108\pm20$  &37.2\\
+$10\, \text{mm}$ BK7&223  &$200\pm20$ &49.4  
+\end{tabular}
+\caption{Zu erwartende GDD durch die optischen Elemente für die zweite
+Bandbreite verglichen mit der GDD, die beim Prismenkompressor für die Kompensierung eingestellt wurde. Ebenfalls eingetragen sind die gemessenen Pulslängen.}
+\label{tab2}
+\end{table}
+
+
 \subsection{Spatial Chirp und Pulse Front Tilt}
 Der räumliche Chirp, welcher von der Quick-Frog Software gemessen wurde, ist
 zusammen mit dem Puls Front tilt in \cref{tab:pft} aufgetragen. Für die Messung
 ohne optische Elemente wurden ebenfalls beide Werte zum Vergleich eingetragen. 
-Da von jedem Element höchstens zwei Datenpunkte vorhanden sind, wurde auf einen
+Da von jedem Element höchstens zwei Datenpunkte vorhanden sind, und die ersten
+per Konstruktion aufeinander fallen, wurde auf einen
 Plot verzichtet. Man sieht, dass auch ohne optisches Element sowohl der PFT als
 auch der räumliche Chirp nicht null sind. Deswegen ist in \cref{fig:pcpft}
 beides für verschiedene Prismeneinschübe, aber ohne optisches Element
 aufgetragen. Man erkennt, dass der räumliche Chirp mit steigendem
 Prismeneinschub geringer wird, während der PFT wächst. Fehler wurden von der Analysesoftware nicht berechnet, aber man
-kann die Schwankungen der Messwerte größer als den Messfehler des Instrumentes
+kann die zeitliche Schwankungen der Messwerte größer als den Messfehler des Instrumentes
 annehmen.
 \begin{figure}[]
     \begin{center}
         \input{pcpft.tex}
     \end{center}
-    \caption{Puls Front Tilt und Spatial Chirp der Prismenkompressorausmessung
+    \caption{Puls Front Tilt und Spatial Chirp der Prismenkompressor-Vermessung
     in Abhängigkeit der Insertion.}
     \label{fig:pcpft}
 \end{figure}
@@ -554,7 +711,11 @@ ohne Langpassfilter bei optimaler Prismenkonfiguration. Die zugehörigen
 Pulsdauern und Bandbreiten sind in Tabelle \cref{tab:long} zusammengefasst.
 Zum Vergleich ist für die gemessene Bandbreite der Langpass-Messung mithilfe
 vom Zeit-Bandprodukt \cref{eq:bandprodeasy} die resultierende Pulsdauer eines
-fourierlimitierten Pulses berechnet worden.
+fourierlimitierten Pulses berechnet worden. Es ist zu erkennen, dass hier
+größere Wellenlängen abgeschnitten werden, genau das Gegenteil, was man bei
+einem Langpassfilter erwartet. Außerdem wird die spektrale Phase durch das
+Kompensieren mit dem Prismenkompressor komplizierter und erhählt einen Knick in
+Nähe des Minimums.
 
 
 \begin{table}
@@ -632,9 +793,13 @@ zuvor. Die Pulsintensität, sowie das Spektrum mit Phase sind in
 \cref{fig:chirptemp,fig:chirpspec} zu sehen. Man erkennt eine deutliche
 Phasenfluktuation, sowie eine große Pulsbreite bei den kompensierten
 Prismenkompressoreinstellungen. Die Messungen in optimaler Einstellung sind
-stattdessen mit Ausnahme von einigen Einschneidungen in der Intensitätnahezu
+stattdessen mit Ausnahme von einigen Einschneidungen in der Intensität nahezu
 Gaußförmig, wenn auch mit deutlich größerer Pulsdauer im Vergleich zu den 
-metallischen Spiegeln.
+metallischen Spiegeln. Es ist anzunehmen, dass es sich hier um gechirpte
+Spiegel handelt, die eine große negative GDD liefern. Dieser Effekt wird
+verstärkt durch die mehreren Reflektionen. Dies würde erklären, wieso die
+Pulsform bei den ``kompensierten'' Messungen verzerrter ist: Der
+Prismen-Kompressor addiert noch mehr negativen GDD hinzu.
 
 
 \begin{figure}[]
@@ -663,7 +828,47 @@ metallischen Spiegeln.
 \end{figure}
 
 \section{Diskussion}
-\cite{tidecks1990current}
+\subsection{Prismenkompressor}
+Zunächst ist aus \cref{fig:temp1,fig:temp2} zu sehen, dass die Pulslänge für
+die optimale Prismenkompressor-Einstellung tatsächlich minimal ist. Desweiteren
+ist bei der ersten Laserbandbreiten-Einstellung die optimale Phase weniger
+gekrümmt als alle anderen: Ihre zweite Ordnung ist gering. Dies sagt aus, dass
+der lineare Chirp in dieser Einstellung tatsächlich minimiert wurde. Dennoch
+konnte nicht erreicht werden, dass der Chirp komplett verschwindet. Dies ist
+jedoch zu erwarten, da die Einstellung des Prismenkompressors beim Suchen des
+Pulsminimas im Experiment relativ ungenau war, dar es eine breite Einstellung
+des Prismas gab, bei der die Pulslänge von Quick Frog als nahezu konstant
+angezeigt wurde. Weiterhin erkennt man, dass der Puls in der Zeit minimal
+verschiebt wurde (ca. 0.002\;fs). Dies sagt aus, dass die spektrale Phase
+annäherend keinen linearen Anteil hat, was die Näherung während der Umrechnung
+der GDD in fs$^{-1}$ rechtfertigt. Bei der zweiten Lasereinstellung ist dies
+nicht mehr der Fall: Der Puls ist um einige Femtosekunden zeitlich verschoben.
+Demnach ist der Messwert für die GDD der zweiten Bandbreite ungenauer. Dies ist
+auch qualitativ aus \cref{fig:spec2} zu sehen, da die Phase hier einen Knick im
+Minimum hat. Bei Betrachtung des Spektrums der ersten Bandbreite fällt auf,
+dass für verschiedene Einschübe das Spektrum verschoben wird. Dies bedeutet,
+dass die zeitliche Phase einen nicht verschwindenden linearen Anteil (GD)
+aufweist. Man erkennt, dass sich die Bandbreite minimal ändert, was bedeutet,
+dass der größte Einfluss auf die Pulslänge tatsächlich die GDD ist, wie
+erwartet. Auch hier ist deutlich, dass die spektrale Phase in optimaler
+Einstellung minimal ist, demnach ist der Puls nahezu ungechirpt.
+Für die zweite Bandbreite hätte man eine neue Prismenkompressor-Position finden
+müssen, bei der die Pulslänge minimiert wird. Der hier gefundene optimale Wert
+für die erste Bandbreite liefert zwar ebenfalls für die zweite Bandbreite eine
+minimale Pulslänge, allerdings hätte man für noch größere Einschübe
+wahrscheinlich eine noch kürzere Pulslänge erhalten können.\\
+Da der Laser nahezu ungechirpt aus dem PC austritt, wenn dieser in optimaler
+Position ist, ist das Vorgehen für die Vermessung des PC's gerechtfertigt. Die
+Bestimmung des Einschubes durch die Position, ab der der Laser am Prisma
+vorbeifliegt ist jedoch recht ungenau, was auch die großen Messungenauigkeiten
+und die Fehlerintervalle in den Theoriewerten in
+\cref{fig:pckieran1,fig:pckieran2} hervorruft. Für die erste Bandbreite ist die
+Übereinstimmung der Theorie- und Messwerte hervorragend. Lediglich als der
+Laser angefangen hat, am Prisma vorbeizuschießen wird hier eine signifikante
+Abweichung erreicht. Für die zweite Bandbreite ist die Steigung der sich
+bildenden geraden offensichtlich falsch im Vergleich zur Theorie. Hier ist als
+Ursache die fehlerhafte Prismenkonfiguration zu nennen.
+\subsection{Glasfenster}
 
 
 \bibliography{literatur}

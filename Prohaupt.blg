@@ -17,46 +17,47 @@ Warning--to sort, need author or key in refr
 Warning--to sort, need author or key in tutspatialchirp
 Warning--to sort, need author or key in wikipc
 Warning--to sort, need author or key in swampintro
+Warning--to sort, need author or key in SwampOpticsFrog
 Warning--to sort, need author or key in fprakt
-You've used 7 entries,
+You've used 10 entries,
             3552 wiz_defined-function locations,
-            829 strings with 6728 characters,
-and the built_in function-call counts, 2992 in all, are:
-= -- 346
-> -- 23
-< -- 36
-+ -- 52
-- -- 15
-* -- 267
-:= -- 475
-add.period$ -- 7
-call.type$ -- 7
-change.case$ -- 31
-chr.to.int$ -- 7
-cite$ -- 22
-duplicate$ -- 105
-empty$ -- 286
-format.name$ -- 27
-if$ -- 638
+            848 strings with 7203 characters,
+and the built_in function-call counts, 4361 in all, are:
+= -- 503
+> -- 40
+< -- 58
++ -- 81
+- -- 24
+* -- 393
+:= -- 709
+add.period$ -- 10
+call.type$ -- 10
+change.case$ -- 44
+chr.to.int$ -- 10
+cite$ -- 28
+duplicate$ -- 150
+empty$ -- 407
+format.name$ -- 46
+if$ -- 922
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 6
-newline$ -- 47
-num.names$ -- 8
-pop$ -- 57
+missing$ -- 8
+newline$ -- 65
+num.names$ -- 16
+pop$ -- 81
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 38
 quote$ -- 0
-skip$ -- 96
+skip$ -- 142
 stack$ -- 0
-substring$ -- 214
-swap$ -- 14
-text.length$ -- 5
+substring$ -- 297
+swap$ -- 22
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
-warning$ -- 5
-while$ -- 27
+type$ -- 100
+warning$ -- 6
+while$ -- 42
 width$ -- 0
-write$ -- 69
+write$ -- 99
 (There was 1 error message)

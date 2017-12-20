@@ -1,4 +1,4 @@
-\begin{thebibliography}{7}
+\begin{thebibliography}{10}
 % this bibliography was produced with the style dinat.bst v2.5
 \makeatletter
 \newcommand{\dinatlabel}[1]%
@@ -27,6 +27,11 @@
 \newblock http://www.swampoptics.com. --
 \newblock Zugrifssdatum: 11.12.2017
 
+\bibitem[SwampOpticsFrog()]{SwampOpticsFrog}
+\dinatlabel{SwampOpticsFrog } :
+\newblock \emph{Swamp Optics Tutorial on FROG}.
+\newblock http://www.swampoptics.com/assets/tutorials-frog-2015.pdf
+
 \bibitem[tutspatialchirp()]{tutspatialchirp}
 \dinatlabel{tutspatialchirp } \emph{Swamp optics tutorial on spatial chirp}.
 \newblock http://www.swampoptics.com/assets/tutorials-spatio-temporal-2015.pdf.
@@ -41,10 +46,25 @@
 \newblock 12 (2004), Sep, Nr.~19, S.~4399--4410. --
 \newblock URL \url{http://www.opticsexpress.org/abstract.cfm?URI=oe-12-19-4399}
 
-\bibitem[Tidecks(1990)]{tidecks1990current}
-\dinatlabel{Tidecks 1990} \textsc{Tidecks}, Reinhard:
-\newblock \emph{Current-induced nonequilibrium phenomena in
-  quasi-one-dimensional superconductors}.
-\newblock Springer, 1990
+\bibitem[Diels und Rudolph(2006)]{Diels2006}
+\dinatlabel{Diels und Rudolph 2006} \textsc{Diels}, Jean-Claude~;
+  \textsc{Rudolph}, Wolfgang:
+\newblock \emph{Ultrashort Laser Pulse Phenomena - Fundamentals, Techniques,
+  and Applications on a Femtosecond Time Scale}.
+\newblock Amsterdam, Boston~: Academic Press, 2006. --
+\newblock ISBN 978-0-080-46640-8
+
+\bibitem[Trebino()]{trebinolec}
+\dinatlabel{Trebino } \textsc{Trebino}:
+\newblock \emph{Ultrafast optics course - lecture notes}.
+\newblock http://frog.gatech.edu/talks.html. --
+\newblock Zugrifssdatum: 11.12.2017
+
+\bibitem[Trebino(2012)]{Trebino2012}
+\dinatlabel{Trebino 2012} \textsc{Trebino}, Rick:
+\newblock \emph{Frequency-Resolved Optical Gating: The Measurement of
+  Ultrashort Laser Pulses -}.
+\newblock Berlin Heidelberg~: Springer Science Business Media, 2012. --
+\newblock ISBN 978-1-461-51181-6
 
 \end{thebibliography}
