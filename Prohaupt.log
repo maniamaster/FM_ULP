@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.27)  21 DEC 2017 00:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.2.27)  21 DEC 2017 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -960,7 +960,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 269.
 
-<spatialchirp.png, id=197, 577.15625pt x 136.51pt>
+<spatialchirp.png, id=227, 577.15625pt x 136.51pt>
 File: spatialchirp.png Graphic file (type png)
  <use spatialchirp.png>
 Package pdftex.def Info: spatialchirp.png used on input line 271.
@@ -974,7 +974,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 282.
 
-<pft.jpeg, id=202, 462.72874pt x 378.41376pt>
+<pft.jpeg, id=232, 462.72874pt x 378.41376pt>
 File: pft.jpeg Graphic file (type jpg)
  <use pft.jpeg>
 Package pdftex.def Info: pft.jpeg used on input line 284.
@@ -988,7 +988,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 291.
 
-<pc.png, id=205, 1284.8pt x 719.68875pt>
+<pc.png, id=235, 1284.8pt x 719.68875pt>
 File: pc.png Graphic file (type png)
  <use pc.png>
 Package pdftex.def Info: pc.png used on input line 293.
@@ -1045,7 +1045,7 @@ Package epstopdf Info: Source file: <aufbau1.eps>
 df aufbau1.eps>
 (epstopdf)             \includegraphics on input line 390.
 Package epstopdf Info: Output file is already uptodate.
-<aufbau1-eps-converted-to.pdf, id=232, 1399.2275pt x 1133.23375pt>
+<aufbau1-eps-converted-to.pdf, id=262, 1399.2275pt x 1133.23375pt>
 File: aufbau1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use aufbau1-eps-converted-to.pdf>
@@ -1132,7 +1132,7 @@ Package epstopdf Info: Source file: <temp1.eps>
  temp1.eps>
 (epstopdf)             \includegraphics on input line 143.
 Package epstopdf Info: Output file is already uptodate.
- <temp1-eps-converted-to.pdf, id=276, 361.35pt x 252.945pt>
+ <temp1-eps-converted-to.pdf, id=307, 361.35pt x 252.945pt>
 File: temp1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp1-eps-converted-to.pdf>
@@ -1154,7 +1154,7 @@ Package epstopdf Info: Source file: <spec1.eps>
  spec1.eps>
 (epstopdf)             \includegraphics on input line 142.
 Package epstopdf Info: Output file is already uptodate.
- <spec1-eps-converted-to.pdf, id=277, 361.35pt x 252.945pt>
+ <spec1-eps-converted-to.pdf, id=308, 361.35pt x 252.945pt>
 File: spec1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec1-eps-converted-to.pdf>
@@ -1176,7 +1176,7 @@ Package epstopdf Info: Source file: <temp2.eps>
  temp2.eps>
 (epstopdf)             \includegraphics on input line 139.
 Package epstopdf Info: Output file is already uptodate.
- <temp2-eps-converted-to.pdf, id=278, 361.35pt x 252.945pt>
+ <temp2-eps-converted-to.pdf, id=309, 361.35pt x 252.945pt>
 File: temp2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use temp2-eps-converted-to.pdf>
@@ -1198,7 +1198,7 @@ Package epstopdf Info: Source file: <spec2.eps>
  spec2.eps>
 (epstopdf)             \includegraphics on input line 135.
 Package epstopdf Info: Output file is already uptodate.
- <spec2-eps-converted-to.pdf, id=279, 361.35pt x 252.945pt>
+ <spec2-eps-converted-to.pdf, id=310, 361.35pt x 252.945pt>
 File: spec2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use spec2-eps-converted-to.pdf>
@@ -1209,7 +1209,7 @@ Package pdftex.def Info: spec2-eps-converted-to.pdf used on input line 135.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 567.
 
-<Eric/prismcomp.pdf, id=280, 433.62pt x 289.08pt>
+<Eric/prismcomp.pdf, id=311, 433.62pt x 289.08pt>
 File: Eric/prismcomp.pdf Graphic file (type pdf)
  <use Eric/prismcomp.pdf>
 Package pdftex.def Info: Eric/prismcomp.pdf used on input line 569.
@@ -1219,7 +1219,7 @@ Package pdftex.def Info: Eric/prismcomp.pdf used on input line 569.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 578.
 
-<Eric/prismcomp2.pdf, id=281, 433.62pt x 289.08pt>
+<Eric/prismcomp2.pdf, id=312, 433.62pt x 289.08pt>
 File: Eric/prismcomp2.pdf Graphic file (type pdf)
  <use Eric/prismcomp2.pdf>
 Package pdftex.def Info: Eric/prismcomp2.pdf used on input line 580.
@@ -1233,7 +1233,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 601.
 
-<Eric/glasBK7.pdf, id=286, 433.62pt x 289.08pt>
+<Eric/glasBK7.pdf, id=317, 433.62pt x 289.08pt>
 File: Eric/glasBK7.pdf Graphic file (type pdf)
  <use Eric/glasBK7.pdf>
 Package pdftex.def Info: Eric/glasBK7.pdf used on input line 603.
@@ -1262,7 +1262,7 @@ Package epstopdf Info: Source file: <pcpft.eps>
  pcpft.eps>
 (epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
- <pcpft-eps-converted-to.pdf, id=291, 361.35pt x 252.945pt>
+ <pcpft-eps-converted-to.pdf, id=322, 361.35pt x 252.945pt>
 File: pcpft-eps-converted-to.pdf Graphic file (type pdf)
 
 <use pcpft-eps-converted-to.pdf>
@@ -1345,7 +1345,7 @@ Package epstopdf Info: Source file: <longpass.eps>
 pdf longpass.eps>
 (epstopdf)             \includegraphics on input line 117.
 Package epstopdf Info: Output file is already uptodate.
- <longpass-eps-converted-to.pdf, id=402, 361.35pt x 252.945pt>
+ <longpass-eps-converted-to.pdf, id=432, 361.35pt x 252.945pt>
 File: longpass-eps-converted-to.pdf Graphic file (type pdf)
 
 <use longpass-eps-converted-to.pdf>
@@ -1368,7 +1368,7 @@ Package epstopdf Info: Source file: <longpass2.eps>
 (epstopdf)             \includegraphics on input line 124.
 Package epstopdf Info: Output file is already uptodate.
 
-<longpass2-eps-converted-to.pdf, id=403, 361.35pt x 252.945pt>
+<longpass2-eps-converted-to.pdf, id=433, 361.35pt x 252.945pt>
 File: longpass2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use longpass2-eps-converted-to.pdf>
@@ -1411,7 +1411,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 770.
 
-<diel.jpg, id=423, 513.92pt x 513.92pt>
+<diel.jpg, id=454, 513.92pt x 513.92pt>
 File: diel.jpg Graphic file (type jpg)
  <use diel.jpg>
 Package pdftex.def Info: diel.jpg used on input line 772.
@@ -1421,7 +1421,7 @@ Package pdftex.def Info: diel.jpg used on input line 772.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 778.
 
-<opttrace.jpg, id=424, 513.92pt x 513.92pt>
+<opttrace.jpg, id=455, 513.92pt x 513.92pt>
 File: opttrace.jpg Graphic file (type jpg)
  <use opttrace.jpg>
 Package pdftex.def Info: opttrace.jpg used on input line 780.
@@ -1447,7 +1447,7 @@ Package babel Info: Redefining ngerman shorthand "~
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 805.
 
-<chirpsp1.jpg, id=440, 513.92pt x 513.92pt>
+<chirpsp1.jpg, id=470, 513.92pt x 513.92pt>
 File: chirpsp1.jpg Graphic file (type jpg)
  <use chirpsp1.jpg>
 Package pdftex.def Info: chirpsp1.jpg used on input line 807.
@@ -1457,7 +1457,7 @@ Package pdftex.def Info: chirpsp1.jpg used on input line 807.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 811.
 
-<chirpsp2.jpg, id=441, 513.92pt x 513.92pt>
+<chirpsp2.jpg, id=471, 513.92pt x 513.92pt>
 File: chirpsp2.jpg Graphic file (type jpg)
  <use chirpsp2.jpg>
 Package pdftex.def Info: chirpsp2.jpg used on input line 813.
@@ -1479,7 +1479,7 @@ Package epstopdf Info: Source file: <chirptemp.eps>
 (epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<chirptemp-eps-converted-to.pdf, id=442, 361.35pt x 252.945pt>
+<chirptemp-eps-converted-to.pdf, id=472, 361.35pt x 252.945pt>
 File: chirptemp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use chirptemp-eps-converted-to.pdf>
@@ -1503,7 +1503,7 @@ Package epstopdf Info: Source file: <chirpspec.eps>
 (epstopdf)             \includegraphics on input line 120.
 Package epstopdf Info: Output file is already uptodate.
 
-<chirpspec-eps-converted-to.pdf, id=443, 361.35pt x 252.945pt>
+<chirpspec-eps-converted-to.pdf, id=473, 361.35pt x 252.945pt>
 File: chirpspec-eps-converted-to.pdf Graphic file (type pdf)
 
 <use chirpspec-eps-converted-to.pdf>
@@ -1511,37 +1511,88 @@ Package pdftex.def Info: chirpspec-eps-converted-to.pdf used on input line 120.
 
 (pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
 )
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 830.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 830.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 831.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 831.
-Package cleveref Info: loaded `ngerman' language definitions on input line 871.
+Package cleveref Info: loaded `ngerman' language definitions on input line 830.
+
+Package cleveref Info: loaded `ngerman' language definitions on input line 830.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
  [15 <./opttrace.jpg> <./chirpsp1.jpg> <./chirpsp2.jpg>]
-Package cleveref Info: loaded `ngerman' language definitions on input line 871.
+Package cleveref Info: loaded `ngerman' language definitions on input line 830.
+
+Package cleveref Info: loaded `ngerman' language definitions on input line 830.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 871.
+(babel)             in language  on input line 830.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 871.
- [16 <./chirptemp-eps-converted-to.pdf> <./chirpspec-eps-converted-to.pdf>] (./
-Prohaupt.bbl
+(babel)             in language  on input line 830.
+ [16 <./chirptemp-eps-converted-to.pdf> <./chirpspec-eps-converted-to.pdf>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 831.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 831.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 832.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 832.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 872.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 872.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 897.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 897.
+Package cleveref Info: loaded `ngerman' language definitions on input line 917.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 917.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 917.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 917.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 917.
+ [17]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 917.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 917.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 933.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 933.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 944.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 944.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 958.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 958.
+Package cleveref Info: loaded `ngerman' language definitions on input line 991.
+
+Package cleveref Info: loaded `ngerman' language definitions on input line 991.
+
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 991.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 991.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 991.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 991.
+ [18] (./Prohaupt.bbl
 Underfull \hbox (badness 1354) in paragraph at lines 36--40
 []\T1/ptm/m/it/10 Swamp op-tics tu-to-ri-al on spa-ti-al chirp\T1/ptm/m/n/10 . 
  http://www.swampoptics.com/assets/tutorials-spatio-temporal-
@@ -1551,37 +1602,37 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 47.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 874.
-Package cleveref Info: loaded `ngerman' language definitions on input line 874.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 996.
+Package cleveref Info: loaded `ngerman' language definitions on input line 996.
 
-Package cleveref Info: loaded `ngerman' language definitions on input line 874.
+Package cleveref Info: loaded `ngerman' language definitions on input line 996.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 996.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 996.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 874.
+(babel)             in language  on input line 996.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 874.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 874.
+(babel)             in language  on input line 996.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 996.
  (./Prohaupt.aux
 Package cleveref Info: loaded `ngerman' language definitions on input line 21.
 Package cleveref Info: loaded `ngerman' language definitions on input line 25.
 Package cleveref Info: loaded `ngerman' language definitions on input line 29.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 874.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 874.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 996.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 996.
 Package rerunfilecheck Info: File `Prohaupt.out' has not changed.
-(rerunfilecheck)             Checksum: 67533C11F2D0967B362D764CAA9D3476;1524.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 874.
+(rerunfilecheck)             Checksum: CB59358E824BD96EB363BAC7A35EADB8;1948.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 996.
  ) 
 Here is how much of TeX's memory you used:
- 14274 strings out of 493304
- 218178 string characters out of 6139871
- 404148 words of memory out of 5000000
- 17309 multiletter control sequences out of 15000+600000
+ 14289 strings out of 493304
+ 218377 string characters out of 6139871
+ 405148 words of memory out of 5000000
+ 17316 multiletter control sequences out of 15000+600000
  63400 words of font info for 95 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  48i,16n,50p,637b,757s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1602,10 +1653,10 @@ e1/urw/ncntrsbk/uncr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times
 /utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/wasy/wasy10.pfb>
-Output written on Prohaupt.pdf (20 pages, 721350 bytes).
+Output written on Prohaupt.pdf (22 pages, 730464 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 456 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 592 PDF objects out of 1000 (max. 8388607)
+ 498 compressed objects within 5 object streams
+ 104 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

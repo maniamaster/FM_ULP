@@ -23,5 +23,11 @@
 \contentsline {subsection}{\numberline {5.4}Langpassfilter}{12}{subsection.5.4}
 \contentsline {subsection}{\numberline {5.5}Dielektrische Spiegel}{14}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Rechteckiges Spiegelpaar}{14}{subsection.5.6}
-\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
+\contentsline {section}{\numberline {6}Diskussion}{17}{section.6}
 \contentsline {subsection}{\numberline {6.1}Prismenkompressor}{17}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Glasfenster}{17}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Spatial Chirp und Pulse Front Tilt}{17}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Langpassfilter}{18}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Dielektrische Spiegel}{18}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Gechirpte Spiegel}{18}{subsection.6.6}
+\contentsline {section}{\numberline {7}Kritik am Versuchsaufbau und dem Handbuch}{18}{section.7}

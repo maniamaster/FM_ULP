@@ -827,6 +827,7 @@ Prismen-Kompressor addiert noch mehr negativen GDD hinzu.
     \label{fig:chirpspec}
 \end{figure}
 
+\newpage
 \section{Diskussion}
 \subsection{Prismenkompressor}
 Zunächst ist aus \cref{fig:temp1,fig:temp2} zu sehen, dass die Pulslänge für
@@ -869,6 +870,125 @@ Abweichung erreicht. Für die zweite Bandbreite ist die Steigung der sich
 bildenden geraden offensichtlich falsch im Vergleich zur Theorie. Hier ist als
 Ursache die fehlerhafte Prismenkonfiguration zu nennen.
 \subsection{Glasfenster}
+Die Messungen für die Glasfenster sind generell ins sehr guter Übereinstimmung
+mit den theoretischen Werten. So ist bei allen Gläsern außer dem MgF2 der
+Theoriewert innerhalb des Fehlerintervalls der Messwerte. Diese wurden aber
+auch durch die ungenaue Messung der Prismenkompressor-Größen relativ groß
+gewählt. Die relativen
+Abweichungen sind nur ca. $5\%$. Man kann deswegen der Pulskomprimierung des
+Prismenkompressors vertrauen. Einzig und allein die Messung für das MgF2 Glas
+ergibt völlig falsche Ergebnisse. Wie bereits im Auswertungs-Abschnitt
+geschildert, muss es sich hier um falsche Daten handeln. Entweder wurden die
+richtigen Daten aus versehen überschrieben, oder Der Laser hat das Glas nicht
+getroffen, was aber sehr unwahrscheinlich ist. Die gemessenen Pulslängen sind
+ebenfalls in einigermaßen guter Übereinstimmung zu den mit VChirp simulierten
+Werten. Hier findet man einen relativen Fehler von ca. 25\%. Eine Erklärung
+hierfür ist, dass bei VChirp ein völlig ungechirpter Puls Gaußpuls benutzt
+wurde. Es ist anzumerken, dass die Fehler vom Quick-Frog Programm nicht
+geliefert wurden. Man hat während des Versuchs jedoch eine zeitliche Schwankung
+der Messwerte erkannt. Diese Fehler wurden bei der Auswertung linear
+interpoliert und sind in die Unsicherheitsintervalle bereits eingeflossen. Es ist zu sehen, dass die Simulationsergebnisse eine größere Pulslänge
+vorhersagen. Dies ist konsistent mit der Annahme, dass nach
+\cref{eq:pulsverbreiterung} ein Puls mit kürzerer Pulslänge mehr
+Pulsverbreiterung durch Dispersion erlebt.
+Die Werte für die zweite Laser-Bandbreite sind ebenfalls in guter
+Übereinstimmung mit der Theorie, obwohl keine neue PC Position bestimmt wurde.
+Der relative Fehler beträgt hier ca 10\%. 
+\subsection{Spatial Chirp und Pulse Front Tilt}
+Bei dem schiefen Glas erwartet man als zusätzlichen Effekt einen räumlichen
+Chirp. Es ist jedoch zu sehen, dass das nicht schiefe Glas einen ungefähr
+gleichen räumlichen Chirp aufweist. Den mit Abstand größten räumlichen Chirp
+weist der Langpassfilter auf, obwohl man hier theoretisch keinen Einfluss
+erwartet. Eine mögliche Fehlerquelle ist ein ungenaues, bzw schiefes Einbauen
+der optischen Elemente. Vergleicht man die kompensierten Werte, so ergibt sich
+der allgemeine Trend, dass der Spatial Chirp mit mehr Kompensation geringer
+wird. Mehr Kompensation bedeutet hier weniger Einschub des Prismas. Deswegen
+ist dieser Trend bei der Vermessung des Prismenkompressors in \cref{fig:pcpft}
+bestätigt. Die Ursache ist womöglich ein ungenau ausgerichteter
+Prismenkompressor, da bei optimaler Einstellung kein räumlicher Chirp auftreten
+sollte. Ein offensichtlicher Ausreißer ist das 10\;mm BK7 Glas mit einem
+Wert von 2070$\times10^{-5}\Delta\lambda/\Delta x$. Es ist wahrscheinlich, dass
+diese Anomalie von einem Fehlerhaften Messen, zum Beispiel einer Über- oder
+Unterbelichtung kommt.\\
+Für den PFT erkennt man zwar, dass der Prismenkompressor bei mehr Einschub
+einen größeren PFT liefert, dennoch ist der PFT bei dem Keil ungefähr zweimal
+so groß wie bei allen anderen Messungen, entspricht also den Erwartungen, dass
+der Keil zu einem zusätzlichen PFT führt.
+\subsection{Langpassfilter}
+Zunächst ist anzumerken, dass es sich hier höchstwahrscheinlich um einen
+Shortpass-Filter handelt. Wahrscheinlich wurden die beiden Filter aus versehen
+vertauscht. Im Experiment konnte durch den ``Short-Pass'' benannten Filter,
+keine Intensität durchkommen. Deswegen könnte es auch sein, dass die
+Abschneide-Wellenlänge eine Falsche ist. Es ist aus \cref{tab:long} zu
+erkennen, dass die Pulslängen nach Durchlaufen des Filters wesentlich länger
+sind, als von einem nahezu ungechirpten Puls erwartet, was man anhand des
+größeren Zeit-Bandproduktes erkennen kann. Auch in der Grafik des Spektrums
+(\cref{fig:long2} ist zu sehen, dass die spektrale Phase einen Knick nahe des
+Minimums hat. Interessant ist hier, dass eine Kompensation mit dem
+Prismenkompressor die Verzerrung der spektralen Phase nur verstärkt, insgesamt
+aber dennoch der Puls kürzer wird. Dies liegt daran, dass der unkompensierte
+Puls einen relativ langen Schwanz auf der positiven Zeitachse besitzt, während
+der komprimierte Puls dies nicht aufweist. Dies könnte zum Beispiel ein Effekt
+von einer Dispersion höherer Ordnung sein.
+\subsection{Dielektrische Spiegel}
+Für die Dielektrischen Spiegel waren offensichtlich keine Sinnvollen Pulslängen
+bestimmbar. Dies ergibt Sinn, wenn diese nicht für Ultrakurzlaser angefertigt
+sind. Dielektrische Spiegel absorbieren unterschiedliche Wellenlängen durch
+ihre verschiedenen Schichtdicken unterschiedlich stark und dies führt zu einer
+Verzögerung die stark abhängig von der Wellenlänge ist. Deswegen kann die Phase
+des einlaufenden Pulses durch diese Interferenz stark verzerrt werden. 
+Es ist also wichtig, vor dem Experiment zu überprüfen, ob die dielektrischen
+Spiegel für Ultrakurzzeit-Experimente geeignet sind. Metallische Spiegel haben
+diese Gefahr nicht, allerdings liefern sie auch schlechtere Reflektivitäten als
+korrekt präparierte dielektrische Spiegel.
+\subsection{Gechirpte Spiegel}
+Wie bereits in der Auswertung erwähnt, handelt es sich wahrscheinlich um
+gechirpte Spiegelpaare. Dies wird daraus gefolgert, dass die Pulsform bei
+kompensierter Messung verzerrter war, als vorher. Dies wäre dadurch zu
+erklären, dass die Spiegel bereits eine hohe negative GDD hervorrufen, was
+durch die negative GDD des Prismenkompressors nur noch weiter verstärkt wird.
+Hier hätte man versuchen können, in die andere Richtung zu drehen, um bei dem
+Prismenkompressor positive GDD zu erzeugen. Es ist jedoch fraglich, ob man
+genug positive GDD erzeugen könnte. 
+Gechirpte Spiegel sind demnach wie der Prismenkompressor eine Möglichkeit die
+positive GDD von optischen Bauteilen zu kompensieren. Da der Prismenkompressor
+in unserer Einstellung nur negative GDD liefert, sind die Verzerrungen also zu
+erwarten.
+
+\section{Kritik am Versuchsaufbau und dem Handbuch}
+Bei diesem Versuch handelt es sich um einen relativ neuen Versuch. Deswegen ist
+mit ein paar Problemen zu rechnen. Der Versuchsaufbau hat kaum Probleme
+bereitet. Es war gut, dass man fast alles noch einmal justieren sollte, um ein
+Gefühl für die Justage zu bekommen, bevor die eigentlichen Messungen angefangen
+haben. Der größte Kritikpunkt fällt hier auf die verwendete Software Quick
+Frog: Es war teilweise nicht zu erkennen, wann das Programm bereit war, neue
+Daten zu sammeln, was zum Beispiel zu Ausreißern wie beim Spatial Chirp oder
+beim MgF2 Glas führen kann. Das größte Problem war allerdings, wie das Programm
+Daten gespeichert hat. So war es sehr mühsam, durch alle Ordner zu gehen und
+die relevanten Daten zu sammeln, besonders Weil viele Daten ausschließlich über
+einen Screenshot einsehbar waren.
+Das Handbuch war gut verständlich und man wusste eigentlich immer, was beim
+Versuch zu machen war. Allerdings hätte ich mich über eine etwas konkretere
+Aufgabenstellung für die Datenauswertung gefreut. Die Aufgaben sind
+(wahrscheinlich gewollt) sehr offen gestellt. Es heißt nur ``Werten Sie die
+Daten aus''. Dies zusammen damit, dass keine relevanten Formeln gegeben waren
+und auch die Literatur nicht eingegrenzt wurde, machte die Literaturrecherche
+für diesen Versuch sehr aufwendig. Natürlich hat man Formeln gefunden, war sich
+aber nie sicher, ob sie brauchbar sind, oder nicht, bzw ob man überhaupt eine
+Auswertung solcher Art durchführen sollte. Besonders für jemanden, der vorher
+keine Erfahrung mit nichtlinearer Optik gemacht hat, war es also eine große
+Herausforderung. Der zeitliche Rahmen für diesen Versuch wurde für 1.5 Credits
+somit bei weitem gesprengt. Es wäre also sinnvoll, genauere Arbeitsaufträge zu
+geben, wie ``Führen Sie einen Phasenfit um das Spektrum aus'', oder ``benutzen
+Sie folgende Formel, um \ldots'' und außerdem die Literatur etwas
+einzuschränken, vielleicht die wirklich relevanten Kapitel ausgedruckt parat zu
+haben. Dies würde zumindest ein Gefühl von
+Sicherheit gewähren, dass man nicht völlig auf dem falschen Pfad ist, ein
+Gefühl was ich leider für einen Großteil der Zeit hatte.
+Dennoch hat man, besonders im Labor, viel über das praktische Arbeiten mit
+Laserquellen und die Justage von optischen Aufbauten gelernt, was meine
+Erwartungen an diesen Versuch erfüllt hat.
+
 
 
 \bibliography{literatur}
